@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="vi" class="lang-vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo vận hành tháng — LEGEND TEXTILE CO LTD / 运营报告 — LEGEND TEXTILE / Monthly Ops Report — LEGEND TEXTILE</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--primary:#1B365D;--secondary:#E8740C;--accent:#2E8B57;--danger:#C0392B;--warn:#D9A400;
+ --bg:#F8F9FA;--text:#1A1A2E;--muted:#5A6072;--border:#E2E8F0;--grad:linear-gradient(135deg,#1B365D 0%,#2D5AA0 100%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-size:14px;line-height:1.65;color:var(--text);background:#fff}
+html.lang-vi body{font-family:'Be Vietnam Pro',sans-serif}
+html.lang-en body{font-family:'Inter',sans-serif}
+html.lang-cn body{font-family:'Noto Sans SC',sans-serif}
+h1,h2,h3,h4,h5,h6{margin:0 0 8px}
+a{color:var(--primary)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+
+/* ---- language switching ---- */
+html.lang-vi .cn,html.lang-vi .en,html.lang-vi .blk-cn,html.lang-vi .blk-en{display:none !important}
+html.lang-cn .vi,html.lang-cn .en,html.lang-cn .blk-vi,html.lang-cn .blk-en{display:none !important}
+html.lang-en .vi,html.lang-en .cn,html.lang-en .blk-vi,html.lang-en .blk-cn{display:none !important}
+html.lang-vi .vi{display:inline !important}
+html.lang-cn .cn{display:inline !important}
+html.lang-en .en{display:inline !important}
+html.lang-vi .blk-vi{display:block !important}
+html.lang-cn .blk-cn{display:block !important}
+html.lang-en .blk-en{display:block !important}
+.lang-switcher{position:fixed;top:12px;right:14px;z-index:999;background:rgba(255,255,255,.96);border:1px solid var(--border);border-radius:30px;padding:4px;box-shadow:0 4px 14px rgba(0,0,0,.16)}
+.lang-switcher button{border:0;background:transparent;padding:6px 13px;border-radius:22px;cursor:pointer;font-weight:700;font-size:12.5px;color:var(--primary);font-family:inherit}
+.lang-switcher button.active{background:var(--primary);color:#fff}
+
+.classbar{background:#B3261E;color:#fff;font-size:11.5px;font-weight:600;letter-spacing:.4px;padding:6px 20px}
+.classbar .dot{display:inline-block;width:7px;height:7px;background:#fff;border-radius:50%;margin-right:6px}
+header.doc{background:var(--grad);color:#fff;padding:26px 0 20px}
+.headgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start}
+header.doc img.brand{height:30px;display:block;margin-bottom:4px}
+.brandsub{font-size:12px;color:#BFD3EE;letter-spacing:1.6px;font-weight:600;margin-bottom:16px}
+header.doc h1{font-size:24px;font-weight:800}
+header.doc .cname{font-size:19px;font-weight:700;color:#FFC98A;margin:4px 0 8px}
+header.doc .sub{font-size:13px;color:#CFDDEF}
+.metabox{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:13px 15px;font-size:12.5px}
+.metabox div{display:flex;justify-content:space-between;gap:10px;padding:3.5px 0;border-bottom:1px dashed rgba(255,255,255,.16)}
+.metabox div:last-child{border-bottom:0}
+.metabox span:first-child{color:#BFD3EE}
+.metabox span:last-child{font-weight:600;text-align:right}
+.tagbar{margin-top:16px}
+.tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin:3px 6px 3px 0}
+
+nav.toc{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+nav.toc .inner{display:flex;gap:6px;overflow-x:auto;padding:9px 20px;max-width:1160px;margin:0 auto}
+nav.toc a{flex:0 0 auto;font-size:12px;font-weight:600;color:var(--primary);text-decoration:none;border:1px solid var(--border);border-radius:20px;padding:5px 11px;white-space:nowrap}
+nav.toc a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+section.sec{padding:34px 0 22px;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:11.5px;font-weight:800;letter-spacing:1.8px;color:var(--secondary)}
+section.sec h2{font-size:19px;font-weight:800;color:var(--primary);margin:3px 0 6px}
+section.sec h3{font-size:14.5px;font-weight:700;color:var(--primary);margin:20px 0 8px}
+.lead{color:var(--muted);font-size:13px;margin-bottom:12px}
+p{margin:0 0 10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin:14px 0}
+.stat{background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--secondary);border-radius:10px;padding:13px 15px}
+.stat.bad{border-left-color:var(--danger)}
+.stat.ok{border-left-color:var(--accent)}
+.stat .v{font-size:21px;font-weight:800;color:var(--primary);line-height:1.2}
+.stat .l{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:3px}
+.stat .c{font-size:11.5px;font-weight:700;color:var(--accent);margin-top:5px}
+.stat .c.dn{color:var(--danger)}
+.chartbox{border:1px solid var(--border);border-radius:10px;box-shadow:0 2px 10px rgba(27,54,93,.06);padding:20px 22px;margin:16px 0;background:#fff}
+.chartbox h4{font-size:13.5px;font-weight:700;color:var(--primary);margin-bottom:3px}
+.chartbox .cap{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.chartbox .cv{position:relative;height:320px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:12.5px}
+thead th{background:var(--primary);color:#fff;text-align:left;padding:9px 10px;font-weight:600;font-size:12px}
+tbody td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody tr:nth-child(even){background:#FBFCFE}
+tbody tr:hover{background:#EEF4FC}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.tag-up{background:#E7F6EE;color:#1E7A46;font-weight:700;padding:2px 8px;border-radius:12px;font-size:11px;white-space:nowrap}
+.tag-dn{background:#FDECEA;color:#B3261E;font-weight:700;padding:2px 8px;border-radius:12px;font-size:11px;white-space:nowrap}
+.tag-wa{background:#FFF7D6;color:#9A7B00;font-weight:700;padding:2px 8px;border-radius:12px;font-size:11px;white-space:nowrap}
+.tag-nt{background:#EEF1F6;color:#5A6072;font-weight:700;padding:2px 8px;border-radius:12px;font-size:11px;white-space:nowrap}
+.insight{border-left:4px solid var(--secondary);background:linear-gradient(90deg,#FFF7F0 0%,#FFFDFB 100%);border-radius:0 10px 10px 0;padding:13px 17px;margin:15px 0}
+.insight .t{font-weight:700;color:var(--secondary);font-size:12.5px;letter-spacing:.6px;margin-bottom:5px}
+.hl{background:#FFFBE6;border:1px solid #F2D778;border-radius:10px;padding:13px 17px;margin:15px 0}
+.hl .t{font-weight:700;color:#8A6D00;font-size:12.5px;margin-bottom:5px}
+.alert{background:#FDECEA;border:1px solid #F3B4AE;border-left:4px solid var(--danger);border-radius:10px;padding:13px 17px;margin:15px 0}
+.alert .t{font-weight:700;color:var(--danger);font-size:12.5px;margin-bottom:5px}
+.note{font-size:11.5px;color:var(--muted);font-style:italic}
+footer.doc{background:#12233D;color:#BDCBDE;padding:0;margin-top:10px}
+footer .top{background:rgba(255,255,255,.05);padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .cols{display:grid;grid-template-columns:1.4fr 1.2fr 1.6fr;gap:20px;padding:22px 0}
+footer h6{color:#fff;font-size:12px;letter-spacing:1.2px;margin:0 0 7px}
+footer p,footer li{font-size:12px;line-height:1.6}
+footer ul{margin:0;padding-left:16px}
+footer .copy{border-top:1px solid rgba(255,255,255,.1);padding:12px 0;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer .copy b{color:#fff}
+
+@media(max-width:860px){.headgrid,.grid2{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr}header.doc h1{font-size:20px}}
+@media print{nav.toc,.lang-switcher{display:none !important}.chartbox{box-shadow:none}section.sec{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="lang-switcher">
+  <button class="active" data-lang="vi" onclick="switchLang('vi')">VI</button>
+  <button data-lang="cn" onclick="switchLang('cn')">CN</button>
+  <button data-lang="en" onclick="switchLang('en')">EN</button>
+</div>
+
+<div class="classbar">
+  <span class="dot"></span>
+  <span class="vi">TÀI LIỆU NỘI BỘ — KHÔNG CHIA SẺ RA BÊN NGOÀI</span>
+  <span class="cn">内部文件 — 请勿外传</span>
+  <span class="en">INTERNAL DOCUMENT — DO NOT DISTRIBUTE EXTERNALLY</span>
+</div>
+
+<header class="doc">
+  <div class="wrap">
+    <div class="headgrid">
+      <div>
+        <img class="brand" src="https://s.alicdn.com/@logo/logo_en_light_horizontal_default_full.png" alt="Alibaba.com">
+        <div class="brandsub">
+          <span class="vi">GGS VIETNAM · BÁO CÁO VẬN HÀNH THÁNG</span>
+          <span class="cn">GGS VIETNAM · 月度运营报告</span>
+          <span class="en">GGS VIETNAM · MONTHLY OPERATIONS REPORT</span>
+        </div>
+        <h1>
+          <span class="vi">BÁO CÁO VẬN HÀNH THÁNG 10/2026</span>
+          <span class="cn">2026 年 10 月运营报告</span>
+          <span class="en">MONTHLY OPERATIONS REPORT — OCTOBER 2026</span>
+        </h1>
+        <div class="cname">LEGEND TEXTILE CO LTD</div>
+        <div class="sub">
+          <span class="vi">Chẩn đoán 5 chiều cửa hàng trên Alibaba.com · Đối chiếu mốc trung bình ngành và mốc Top ngành (2× TB ngành) từ CRM</span>
+          <span class="cn">Alibaba.com 店铺五维诊断 · 对标 CRM 行业平均值与行业 Top 值（Top = 2× 行业平均）</span>
+          <span class="en">Five-dimension storefront diagnosis on Alibaba.com · Benchmarked against the CRM industry average and industry top (top = 2× average)</span>
+        </div>
+        <div class="tagbar">
+          <span class="tag"><span class="vi">Kỳ dữ liệu: 04/10/2026</span><span class="cn">数据期：2026/10/04</span><span class="en">Data period: 04/10/2026</span></span>
+          <span class="tag"><span class="vi">Gói: Gold</span><span class="cn">套餐：Gold</span><span class="en">Package: Gold</span></span>
+          <span class="tag"><span class="vi">Quốc gia: Việt Nam</span><span class="cn">国家：越南</span><span class="en">Country: Vietnam</span></span>
+          <span class="tag"><span class="vi">Ngành CRM: Pet Supplies (lv1 201946504)</span><span class="cn">CRM 行业：Pet Supplies（一级 201946504）</span><span class="en">CRM industry: Pet Supplies (lv1 201946504)</span></span>
+          <span class="tag"><span class="vi">8 biểu đồ</span><span class="cn">8 个图表</span><span class="en">8 charts</span></span>
+        </div>
+      </div>
+      <div class="metabox">
+        <div><span><span class="vi">Khách hàng</span><span class="cn">客户</span><span class="en">Customer</span></span><span>LEGEND TEXTILE CO LTD</span></div>
+        <div><span>companyId</span><span>14066775694</span></div>
+        <div><span>globalId</span><span>4584082145</span></div>
+        <div><span>memberId</span><span>vn19068264480npfv</span></div>
+        <div><span><span class="vi">AM phụ trách</span><span class="cn">负责 AM</span><span class="en">Account manager</span></span><span>Phạm Thương (thng.l)</span></div>
+        <div><span><span class="vi">Gói dịch vụ</span><span class="cn">服务套餐</span><span class="en">Service package</span></span><span>Gold</span></div>
+        <div><span><span class="vi">Ngày hết hạn dịch vụ</span><span class="cn">服务到期日</span><span class="en">Service expiry</span></span><span>27/08/2027</span></div>
+        <div><span><span class="vi">Trạng thái hợp đồng</span><span class="cn">合同状态</span><span class="en">Contract status</span></span><span>S · payment_success</span></div>
+        <div><span><span class="vi">Địa bàn</span><span class="cn">所在地区</span><span class="en">Location</span></span><span><span class="vi">TP. Đồng Xoài, Bình Phước</span><span class="cn">平福省同帅市</span><span class="en">Dong Xoai City, Binh Phuoc</span></span></div>
+        <div><span>Website</span><span>detmayhuyenthao.vn</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="inner">
+    <a href="#s1">01 · <span class="vi">Tóm tắt điều hành</span><span class="cn">执行摘要</span><span class="en">Executive summary</span></a>
+    <a href="#s2">02 · <span class="vi">Sao cửa hàng</span><span class="cn">店铺星级</span><span class="en">Storefront stars</span></a>
+    <a href="#s3">03 · <span class="vi">Lưu lượng &amp; người mua</span><span class="cn">流量与买家</span><span class="en">Traffic &amp; buyers</span></a>
+    <a href="#s4">04 · <span class="vi">Cơ hội kinh doanh</span><span class="cn">商机</span><span class="en">Business opportunities</span></a>
+    <a href="#s5">05 · <span class="vi">Giao dịch</span><span class="cn">交易</span><span class="en">Trade</span></a>
+    <a href="#s6">06 · <span class="vi">Sản phẩm</span><span class="cn">产品</span><span class="en">Products</span></a>
+    <a href="#s7">07 · <span class="vi">Benchmark ngành</span><span class="cn">行业对标</span><span class="en">Industry benchmark</span></a>
+    <a href="#s8">08 · <span class="vi">Hành động ưu tiên</span><span class="cn">优先行动</span><span class="en">Priority actions</span></a>
+    <a href="#s9">09 · <span class="vi">Phương pháp &amp; nguồn</span><span class="cn">方法与来源</span><span class="en">Method &amp; sources</span></a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ===== 01 ===== -->
+<section class="sec" id="s1">
+  <div class="eyebrow">SECTION 01</div>
+  <h2><span class="vi">Tóm Tắt Điều Hành</span><span class="cn">执行摘要</span><span class="en">Executive Summary</span></h2>
+  <div class="blk-vi"><p class="lead">Cửa hàng đang ở giai đoạn khởi động: sản phẩm tăng rất mạnh trong 30 ngày nhưng chưa có sản phẩm tốt, chưa có đơn hàng và lưu lượng người mua ở mức gần như bằng không. Nút thắt nằm ở <strong>chất lượng sản phẩm</strong> và <strong>kích hoạt lưu lượng</strong>, không nằm ở số lượng sản phẩm đăng.</p></div>
+  <div class="blk-cn"><p class="lead">店铺处于启动阶段：30 天内商品数量大幅增长，但尚无优质商品、尚无订单，买家流量几乎为零。瓶颈在于<strong>商品质量</strong>与<strong>流量激活</strong>，而非上架数量。</p></div>
+  <div class="blk-en"><p class="lead">The storefront is in ramp-up: product volume grew sharply in 30 days, yet there are no good products, no orders and buyer traffic is near zero. The bottleneck is <strong>product quality</strong> and <strong>traffic activation</strong>, not listing volume.</p></div>
+
+  <div class="stats">
+    <div class="stat bad"><div class="v">233</div><div class="l"><span class="vi">Sản phẩm hợp lệ</span><span class="cn">有效商品</span><span class="en">Valid products</span></div><div class="c dn"><span class="vi">9,5% TB ngành (2.442,9)</span><span class="cn">行业平均的 9.5%（2,442.9）</span><span class="en">9.5% of industry average (2,442.9)</span></div></div>
+    <div class="stat bad"><div class="v">0</div><div class="l"><span class="vi">Sản phẩm tốt (good product)</span><span class="cn">优质商品（good product）</span><span class="en">Good products</span></div><div class="c dn"><span class="vi">TB ngành 577,3 · Top ngành 1.154,6</span><span class="cn">行业平均 577.3 · 行业 Top 1,154.6</span><span class="en">Industry average 577.3 · industry top 1,154.6</span></div></div>
+    <div class="stat bad"><div class="v">0</div><div class="l"><span class="vi">Đơn hàng thành công (30 ngày)</span><span class="cn">成功订单（30 天）</span><span class="en">Successful orders (30 days)</span></div><div class="c dn"><span class="vi">Doanh thu 30 ngày: 0 USD</span><span class="cn">30 天营收：0 美元</span><span class="en">30-day revenue: USD 0</span></div></div>
+    <div class="stat bad"><div class="v">1</div><div class="l"><span class="vi">Người mua hoạt động (30 ngày)</span><span class="cn">活跃买家（30 天）</span><span class="en">Active buyers (30 days)</span></div><div class="c dn"><span class="vi">0,6% TB ngành (170,59)</span><span class="cn">行业平均的 0.6%（170.59）</span><span class="en">0.6% of industry average (170.59)</span></div></div>
+    <div class="stat ok"><div class="v"><span class="vi">26 giây</span><span class="cn">26 秒</span><span class="en">26 sec</span></div><div class="l"><span class="vi">Thời gian phản hồi trung bình</span><span class="cn">平均回复时长</span><span class="en">Average reply time</span></div><div class="c"><span class="vi">Vượt yêu cầu 23,99 giờ</span><span class="cn">优于要求 23.99 小时</span><span class="en">23.99 hours better than required</span></div></div>
+    <div class="stat ok"><div class="v">100%</div><div class="l"><span class="vi">Tỷ lệ giao hàng đúng hạn</span><span class="cn">准时交付率</span><span class="en">On-time delivery rate</span></div><div class="c"><span class="vi">Duy trì tốt</span><span class="cn">保持良好</span><span class="en">Maintained</span></div></div>
+  </div>
+
+  <div class="insight">
+    <div class="t"><span class="vi">BA PHÁT HIỆN CHÍNH</span><span class="cn">三大发现</span><span class="en">THREE KEY FINDINGS</span></div>
+    <div class="blk-vi">
+      <p><strong>1. Sản phẩm đăng nhiều nhưng chất lượng chưa đạt.</strong> 140 sản phẩm mới trong 30 ngày, sản phẩm hợp lệ tăng +269,84% so với kỳ trước, nhưng <strong>0 sản phẩm được xếp loại "tốt"</strong> và 0 sản phẩm hot. Muốn mở khoá sao sản phẩm cần thêm 67 sản phẩm tốt.</p>
+      <p><strong>2. Ba/5 loại sao đang ở mức 0.</strong> Sao marketing 0, sao dịch vụ 0, sao tổng hợp 0. Cửa hàng còn thiếu 58 UV marketing, 1 lượt phản hồi dịch vụ, 1 đơn hàng và 1 đơn có GMV để vượt ngưỡng.</p>
+      <p><strong>3. Lưu lượng người mua ngoài Việt Nam rất mỏng.</strong> Trong 30 ngày chỉ có 31 lượt người mua, trong đó 48,39% đến từ Việt Nam — tức gần một nửa lưu lượng không phải người mua quốc tế, trong khi nhu cầu ngành nằm ở nước ngoài.</p>
+    </div>
+    <div class="blk-cn">
+      <p><strong>1. 上架数量多但质量未达标。</strong>30 天内新增 140 款商品，有效商品环比 +269.84%，但被评定为"优质"的商品为 <strong>0</strong>，爆款商品为 0。解锁商品星还需 67 款优质商品。</p>
+      <p><strong>2. 5 类星级中有 3 类为 0。</strong>营销星 0、服务星 0、综合星 0。店铺仍需补充 58 个营销 UV、1 次服务回复、1 笔订单及 1 笔有 GMV 的订单以跨越门槛。</p>
+      <p><strong>3. 海外买家流量非常薄弱。</strong>30 天内仅 31 次买家访问，其中 48.39% 来自越南 — 近一半流量并非国际买家，而行业需求集中在海外。</p>
+    </div>
+    <div class="blk-en">
+      <p><strong>1. Listings are plentiful but quality lags.</strong> 140 new products in 30 days, valid products up +269.84% vs the previous period, yet <strong>0 products rated "good"</strong> and 0 hot products. Unlocking the product star needs 67 more good products.</p>
+      <p><strong>2. Three of five stars sit at zero.</strong> Marketing star 0, service star 0, overall star 0. The storefront still needs 58 more marketing UVs, 1 service reply, 1 order and 1 order with GMV to cross the thresholds.</p>
+      <p><strong>3. Overseas buyer traffic is very thin.</strong> Only 31 buyer visits in 30 days, 48.39% of them from Vietnam — nearly half the traffic is not international, while category demand sits abroad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 ===== -->
+<section class="sec" id="s2">
+  <div class="eyebrow">SECTION 02</div>
+  <h2><span class="vi">Chẩn Đoán Sao Cửa Hàng (STAR_RANK)</span><span class="cn">店铺星级诊断（STAR_RANK）</span><span class="en">Storefront Star Diagnosis (STAR_RANK)</span></h2>
+  <div class="blk-vi"><p class="lead">CRM ghi nhận mức sức khoẻ cửa hàng là <strong>healthy</strong> và tỷ lệ giao hàng đúng hạn 100%, nhưng thứ hạng sao vẫn ở mức rất thấp do thiếu khối lượng giao dịch và sản phẩm chất lượng.</p></div>
+  <div class="blk-cn"><p class="lead">CRM 记录店铺健康度为 <strong>healthy</strong>、准时交付率 100%，但由于缺乏交易量和优质商品，星级仍处于很低水平。</p></div>
+  <div class="blk-en"><p class="lead">CRM records storefront health as <strong>healthy</strong> with 100% on-time delivery, but star ratings remain very low for lack of transaction volume and quality products.</p></div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 2.1 — Xếp hạng sao hiện tại của cửa hàng</span><span class="cn">图 2.1 — 店铺当前星级</span><span class="en">Chart 2.1 — Current storefront star ratings</span></h4>
+    <div class="cap"><span class="vi">Thang điểm theo CRM. Sao dịch vụ, marketing và tổng hợp đang ở mức 0.</span><span class="cn">按 CRM 评分。服务星、营销星与综合星均为 0。</span><span class="en">Scored per CRM. Service, marketing and overall stars are all zero.</span></div>
+    <div class="cv"><canvas id="c1"></canvas></div>
+  </div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 2.2 — Khoảng cách cần bù để vượt ngưỡng lên sao</span><span class="cn">图 2.2 — 跨越星级门槛所需补充的缺口</span><span class="en">Chart 2.2 — Gap to fill to cross the star thresholds</span></h4>
+    <div class="cap"><span class="vi">Đơn vị theo từng chỉ số (UV, số đơn, số lượt, số sản phẩm).</span><span class="cn">单位随指标不同（UV、订单数、次数、商品数）。</span><span class="en">Units vary by metric (UVs, orders, counts, products).</span></div>
+    <div class="cv"><canvas id="c2"></canvas></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Chỉ số sao</span><span class="cn">星级指标</span><span class="en">Star metric</span></th>
+      <th class="num"><span class="vi">Hiện tại</span><span class="cn">当前</span><span class="en">Current</span></th>
+      <th class="num"><span class="vi">Còn thiếu</span><span class="cn">缺口</span><span class="en">Gap</span></th>
+      <th><span class="vi">Diễn giải</span><span class="cn">说明</span><span class="en">Explanation</span></th>
+      <th><span class="vi">Trạng thái</span><span class="cn">状态</span><span class="en">Status</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><strong><span class="vi">Sao marketing</span><span class="cn">营销星</span><span class="en">Marketing star</span></strong></td>
+        <td class="num">0</td><td class="num">58 UV</td>
+        <td><span class="vi">Có 42 UV marketing, ngưỡng cần 100 UV</span><span class="cn">现有 42 个营销 UV，门槛需 100 个</span><span class="en">42 marketing UVs present; the threshold is 100</span></td>
+        <td><span class="tag-dn"><span class="vi">Chưa đạt</span><span class="cn">未达标</span><span class="en">Not met</span></span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Sao dịch vụ</span><span class="cn">服务星</span><span class="en">Service star</span></strong></td>
+        <td class="num">0</td><td class="num">1 <span class="vi">lượt phản hồi</span><span class="cn">次回复</span><span class="en">reply</span></td>
+        <td><span class="vi">Đã có 1 lượt phản hồi; thời gian phản hồi 0,0072 giờ (≈26 giây), vượt yêu cầu 23,99 giờ</span><span class="cn">已有 1 次回复；回复时长 0.0072 小时（≈26 秒），优于要求 23.99 小时</span><span class="en">1 reply recorded; reply time 0.0072 h (≈26 seconds), 23.99 hours better than required</span></td>
+        <td><span class="tag-dn"><span class="vi">Chưa đạt</span><span class="cn">未达标</span><span class="en">Not met</span></span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Sao giao dịch</span><span class="cn">交易星</span><span class="en">Trade star</span></strong></td>
+        <td class="num">2</td><td class="num">1 <span class="vi">đơn hàng</span><span class="cn">笔订单</span><span class="en">order</span></td>
+        <td><span class="vi">0 đơn hàng và 0 GMV trong kỳ; tỷ lệ đúng hạn 100%</span><span class="cn">本期 0 笔订单、0 GMV；准时率 100%</span><span class="en">0 orders and 0 GMV in the period; on-time rate 100%</span></td>
+        <td><span class="tag-wa"><span class="vi">Một phần</span><span class="cn">部分达标</span><span class="en">Partial</span></span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Sao sản phẩm</span><span class="cn">商品星</span><span class="en">Product star</span></strong></td>
+        <td class="num">1</td><td class="num">67 <span class="vi">sản phẩm tốt</span><span class="cn">款优质商品</span><span class="en">good products</span></td>
+        <td><span class="vi">233 sản phẩm hợp lệ nhưng 0 sản phẩm tốt</span><span class="cn">233 款有效商品，但优质商品为 0</span><span class="en">233 valid products but 0 good products</span></td>
+        <td><span class="tag-wa"><span class="vi">Một phần</span><span class="cn">部分达标</span><span class="en">Partial</span></span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Sao tổng hợp (level_star)</span><span class="cn">综合星（level_star）</span><span class="en">Overall star (level_star)</span></strong></td>
+        <td class="num">0</td><td class="num">—</td>
+        <td><span class="vi">Kết quả tổng hợp từ các sao thành phần</span><span class="cn">由各分项星级综合得出</span><span class="en">Derived from the component stars</span></td>
+        <td><span class="tag-dn"><span class="vi">Chưa đạt</span><span class="cn">未达标</span><span class="en">Not met</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note"><span class="vi">Nguồn: CRM chẩn đoán chiều STAR_RANK, kỳ dữ liệu 04/10/2026. "Còn thiếu" là giá trị gap do CRM trả về (marketing_uv_cnt_gap, service_reply_cnt_gap, trade_star_ord_cnt_gap, product_star_good_product_cnt_gap).</span><span class="cn">来源：CRM 诊断 STAR_RANK 维度，数据期 2026/10/04。"缺口"为 CRM 返回的 gap 值（marketing_uv_cnt_gap、service_reply_cnt_gap、trade_star_ord_cnt_gap、product_star_good_product_cnt_gap）。</span><span class="en">Source: CRM diagnosis dimension STAR_RANK, data period 04/10/2026. "Gap" values are as returned by CRM (marketing_uv_cnt_gap, service_reply_cnt_gap, trade_star_ord_cnt_gap, product_star_good_product_cnt_gap).</span></p>
+</section>
+
+<!-- ===== 03 ===== -->
+<section class="sec" id="s3">
+  <div class="eyebrow">SECTION 03</div>
+  <h2><span class="vi">Lưu Lượng &amp; Người Mua (BUYER_TRAFFIC)</span><span class="cn">流量与买家（BUYER_TRAFFIC）</span><span class="en">Traffic &amp; Buyers (BUYER_TRAFFIC)</span></h2>
+  <div class="blk-vi"><p class="lead">Trong 30 ngày, cửa hàng tiếp nhận 31 lượt người mua. Điểm đáng lưu ý: 48,39% lưu lượng đến từ chính Việt Nam, trong khi nhu cầu của ngành nằm ở nước ngoài.</p></div>
+  <div class="blk-cn"><p class="lead">30 天内店铺共获得 31 次买家访问。值得注意的是：48.39% 的流量来自越南本地，而行业需求集中在海外。</p></div>
+  <div class="blk-en"><p class="lead">The storefront received 31 buyer visits in 30 days. Notably, 48.39% of that traffic came from Vietnam itself, while category demand sits abroad.</p></div>
+
+  <div class="grid2">
+    <div class="chartbox">
+      <h4><span class="vi">Biểu đồ 3.1 — Top quốc gia người mua của cửa hàng (30 ngày)</span><span class="cn">图 3.1 — 店铺买家来源国家 Top（30 天）</span><span class="en">Chart 3.1 — Storefront buyer countries (30 days)</span></h4>
+      <div class="cap"><span class="vi">CRM liệt kê 10 quốc gia; tổng lưu lượng 30 ngày là 31 lượt.</span><span class="cn">CRM 列出 10 个国家；30 天总流量为 31 次。</span><span class="en">CRM lists 10 countries; total 30-day traffic is 31 visits.</span></div>
+      <div class="cv"><canvas id="c3"></canvas></div>
+    </div>
+    <div class="chartbox">
+      <h4><span class="vi">Biểu đồ 3.2 — Nguồn người mua của cửa hàng (30 ngày)</span><span class="cn">图 3.2 — 店铺买家来源渠道（30 天）</span><span class="en">Chart 3.2 — Storefront buyer sources (30 days)</span></h4>
+      <div class="cap"><span class="vi">DIRECT dẫn đầu với 36,59% — lưu lượng chủ yếu từ truy cập trực tiếp, chưa phải từ tìm kiếm.</span><span class="cn">DIRECT 占 36.59% 居首 — 流量主要来自直接访问，而非搜索。</span><span class="en">DIRECT leads at 36.59% — traffic is mostly direct, not search-driven.</span></div>
+      <div class="cv"><canvas id="c4"></canvas></div>
+    </div>
+  </div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 3.3 — Nhu cầu của toàn ngành theo quốc gia (30 ngày, CRM)</span><span class="cn">图 3.3 — 行业整体需求分布（30 天，CRM）</span><span class="en">Chart 3.3 — Category-wide demand by country (30 days, CRM)</span></h4>
+    <div class="cap"><span class="vi">Đây là phân bố người mua ở cấp ngành (lv2) — dùng để chọn thị trường mục tiêu. Hoa Kỳ chiếm 23,41% nhu cầu ngành nhưng chỉ chiếm 6,45% lưu lượng của cửa hàng.</span><span class="cn">这是行业（二级）层级的买家分布 — 用于选择目标市场。美国占行业需求 23.41%，但仅占店铺流量的 6.45%。</span><span class="en">This is buyer distribution at category level (lv2) — used to pick target markets. The US accounts for 23.41% of category demand but only 6.45% of storefront traffic.</span></div>
+    <div class="cv"><canvas id="c5"></canvas></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Quốc gia</span><span class="cn">国家</span><span class="en">Country</span></th>
+      <th class="num"><span class="vi">Lượt (cửa hàng, 30 ngày)</span><span class="cn">访问次数（店铺，30 天）</span><span class="en">Visits (store, 30 days)</span></th>
+      <th class="num"><span class="vi">Tỉ trọng cửa hàng</span><span class="cn">店铺占比</span><span class="en">Store share</span></th>
+      <th class="num"><span class="vi">Tỉ trọng nhu cầu ngành</span><span class="cn">行业需求占比</span><span class="en">Industry demand share</span></th>
+      <th><span class="vi">Chênh lệch</span><span class="cn">差异</span><span class="en">Difference</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Việt Nam</span><span class="cn">越南</span><span class="en">Vietnam</span></td>
+        <td class="num">15</td><td class="num">48,39%</td><td class="num">—</td>
+        <td><span class="tag-wa"><span class="vi">Lưu lượng nội địa chiếm gần nửa</span><span class="cn">本地流量占近一半</span><span class="en">Domestic traffic is nearly half</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Trung Quốc</span><span class="cn">中国</span><span class="en">China</span></td>
+        <td class="num">4</td><td class="num">12,90%</td><td class="num">10,78%</td>
+        <td><span class="tag-up"><span class="vi">Tương đồng nhu cầu ngành</span><span class="cn">与行业需求相近</span><span class="en">In line with category demand</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Hoa Kỳ</span><span class="cn">美国</span><span class="en">United States</span></td>
+        <td class="num">2</td><td class="num">6,45%</td><td class="num">23,41%</td>
+        <td><span class="tag-dn"><span class="vi">Thiếu hụt lớn nhất so với nhu cầu</span><span class="cn">相对需求缺口最大</span><span class="en">Largest shortfall vs demand</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Anh</span><span class="cn">英国</span><span class="en">United Kingdom</span></td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">4,27%</td>
+        <td><span class="tag-nt"><span class="vi">Còn dư địa</span><span class="cn">仍有空间</span><span class="en">Room to grow</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Pháp</span><span class="cn">法国</span><span class="en">France</span></td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">4,15%</td>
+        <td><span class="tag-nt"><span class="vi">Còn dư địa</span><span class="cn">仍有空间</span><span class="en">Room to grow</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Ý</span><span class="cn">意大利</span><span class="en">Italy</span></td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">3,63%</td>
+        <td><span class="tag-nt"><span class="vi">Còn dư địa</span><span class="cn">仍有空间</span><span class="en">Room to grow</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Indonesia</span><span class="cn">印尼</span><span class="en">Indonesia</span></td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">4,61%</td>
+        <td><span class="tag-nt"><span class="vi">Còn dư địa</span><span class="cn">仍有空间</span><span class="en">Room to grow</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Ấn Độ</span><span class="cn">印度</span><span class="en">India</span></td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">—</td>
+        <td><span class="tag-nt">—</span></td>
+      </tr>
+      <tr>
+        <td>Australia</td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">—</td>
+        <td><span class="tag-nt">—</span></td>
+      </tr>
+      <tr>
+        <td>Ecuador</td>
+        <td class="num">1</td><td class="num">3,23%</td><td class="num">—</td>
+        <td><span class="tag-nt">—</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="insight">
+    <div class="t"><span class="vi">ĐỌC SỐ LIỆU NÀY THẾ NÀO</span><span class="cn">如何解读</span><span class="en">HOW TO READ THIS</span></div>
+    <div class="blk-vi"><p>Trong 7 ngày gần nhất, cửa hàng có 17 lượt xem trang (PV), 576 lượt hiển thị và 1 lượt người mua — tỉ lệ hiển thị → khách truy cập chỉ 3,09%. Với nguồn lưu lượng chủ yếu là DIRECT (36,59%) chứ không phải SEARCH, cửa hàng đang phụ thuộc vào người đã biết gian hàng, <strong>chưa tạo được dòng người mua mới từ tìm kiếm</strong>. Đây là dấu hiệu rõ nhất cho thấy cần đầu tư vào từ khoá/quảng cáo hiển thị.</p></div>
+    <div class="blk-cn"><p>最近 7 天，店铺有 17 次页面浏览（PV）、576 次曝光和 1 次买家访问 — 曝光到访客的转化率仅 3.09%。由于流量主要来自 DIRECT（36.59%）而非 SEARCH，店铺依赖已知晓店铺的用户，<strong>尚未从搜索中获得新的买家流</strong>。这是需要投入关键词/展示广告的最明确信号。</p></div>
+    <div class="blk-en"><p>In the last 7 days the storefront had 17 page views, 576 impressions and 1 buyer visit — an impression-to-visitor rate of just 3.09%. With traffic mainly DIRECT (36.59%) rather than SEARCH, the storefront depends on people who already know it and <strong>is not yet generating new buyer flow from search</strong>. That is the clearest signal to invest in keywords and display advertising.</p></div>
+  </div>
+  <p class="note"><span class="vi">Nguồn: CRM chẩn đoán chiều BUYER_TRAFFIC, kỳ dữ liệu 04/10/2026. Các trường byr_cnt_value_by_country_30d và byr_cnt_value_by_source_30d là số liệu của riêng cửa hàng; các trường có hậu tố _cate_ là phân bố ở cấp ngành.</span><span class="cn">来源：CRM 诊断 BUYER_TRAFFIC 维度，数据期 2026/10/04。byr_cnt_value_by_country_30d 与 byr_cnt_value_by_source_30d 为店铺自身数据；带 _cate_ 后缀的字段为行业层级分布。</span><span class="en">Source: CRM diagnosis dimension BUYER_TRAFFIC, data period 04/10/2026. Fields byr_cnt_value_by_country_30d and byr_cnt_value_by_source_30d are storefront-specific; fields suffixed _cate_ are category-level distribution.</span></p>
+</section>
+
+<!-- ===== 04 ===== -->
+<section class="sec" id="s4">
+  <div class="eyebrow">SECTION 04</div>
+  <h2><span class="vi">Cơ Hội Kinh Doanh (BUSINESS_OPPORTUNITIES)</span><span class="cn">商机（BUSINESS_OPPORTUNITIES）</span><span class="en">Business Opportunities (BUSINESS_OPPORTUNITIES)</span></h2>
+  <div class="blk-vi"><p class="lead">Toàn bộ chỉ số chuyển đổi ở cửa sổ 30 ngày đang bằng 0, trong khi chỉ số 7 ngày đã có tín hiệu dương (14,29% UV → người mua). Nghĩa là cửa hàng bắt đầu có chuyển đổi nhưng khối lượng quá nhỏ để tạo đơn.</p></div>
+  <div class="blk-cn"><p class="lead">30 天窗口的全部转化指标均为 0，而 7 天窗口已出现正向信号（14.29% UV → 买家）。即店铺已开始产生转化，但体量过小，尚无法成单。</p></div>
+  <div class="blk-en"><p class="lead">Every 30-day conversion metric is zero, while the 7-day window already shows a positive signal (14.29% UV → buyer). Conversion has started, but the volume is far too small to produce orders.</p></div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 4.1 — Chỉ số 30 ngày: cửa hàng vs mốc trung bình ngành vs mốc top-10 ngành (CRM)</span><span class="cn">图 4.1 — 30 天指标：店铺 vs 行业平均 vs 行业 Top-10（CRM）</span><span class="en">Chart 4.1 — 30-day metrics: storefront vs industry average vs industry top-10 (CRM)</span></h4>
+    <div class="cap"><span class="vi">Đơn vị: số lượt/số người. Mốc ngành lấy từ trường avg_* và top10_avg_* do CRM trả về cùng chiều chẩn đoán. Quy ước "TB ngành" và "Top ngành" riêng của báo cáo được trình bày ở Phần 07.</span><span class="cn">单位：次数/人数。行业基准取自 CRM 同一诊断维度返回的 avg_* 与 top10_avg_* 字段。本报告自有的"行业平均"与"行业 Top"口径见第 07 部分。</span><span class="en">Unit: counts. Industry reference values come from the avg_* and top10_avg_* fields returned by CRM in the same diagnosis dimension. This report's own "industry average" and "industry top" conventions are set out in Section 07.</span></div>
+    <div class="cv"><canvas id="c6"></canvas></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Chỉ số chuyển đổi</span><span class="cn">转化指标</span><span class="en">Conversion metric</span></th>
+      <th class="num"><span class="vi">Cửa hàng (30 ngày)</span><span class="cn">店铺（30 天）</span><span class="en">Store (30 days)</span></th>
+      <th class="num"><span class="vi">Cửa hàng (7 ngày)</span><span class="cn">店铺（7 天）</span><span class="en">Store (7 days)</span></th>
+      <th><span class="vi">Diễn giải</span><span class="cn">说明</span><span class="en">Explanation</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Người mua hoạt động (ab_cnt)</span><span class="cn">活跃买家（ab_cnt）</span><span class="en">Active buyers (ab_cnt)</span></td>
+        <td class="num">1</td><td class="num">—</td>
+        <td><span class="vi">Có 1 người mua hoạt động, trong đó 1 là khách VIP</span><span class="cn">有 1 个活跃买家，其中 1 个为 VIP 客户</span><span class="en">1 active buyer, of which 1 is VIP</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Lượt kinh doanh (bus_cnt)</span><span class="cn">商机次数（bus_cnt）</span><span class="en">Business leads (bus_cnt)</span></td>
+        <td class="num">1</td><td class="num">1</td>
+        <td><span class="vi">Duy trì được 1 lượt ở cả hai cửa sổ</span><span class="cn">两个窗口均保持 1 次</span><span class="en">Held at 1 in both windows</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Người mua có giao dịch (bus_byr_cnt)</span><span class="cn">有交易的买家（bus_byr_cnt）</span><span class="en">Buyers with transactions (bus_byr_cnt)</span></td>
+        <td class="num">1</td><td class="num">—</td>
+        <td><span class="vi">1 người mua được xếp loại "good buyer"</span><span class="cn">1 个买家被评为 good buyer</span><span class="en">1 buyer rated "good buyer"</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Phản hồi (fb_cnt)</span><span class="cn">评价反馈（fb_cnt）</span><span class="en">Feedback (fb_cnt)</span></td>
+        <td class="num">0</td><td class="num">—</td>
+        <td><span class="vi">Chưa có phản hồi nào — mốc TB ngành 24,37</span><span class="cn">尚无任何反馈 — 行业平均为 24.37</span><span class="en">No feedback yet — industry average 24.37</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ UV → người mua (uv_ab_rate)</span><span class="cn">UV → 买家转化率（uv_ab_rate）</span><span class="en">UV → buyer rate (uv_ab_rate)</span></td>
+        <td class="num">0%</td><td class="num">14,29%</td>
+        <td><span class="vi">Tín hiệu dương ở cửa sổ 7 ngày</span><span class="cn">7 天窗口出现正向信号</span><span class="en">Positive signal in the 7-day window</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ khách truy cập → kinh doanh</span><span class="cn">访客 → 商机转化率</span><span class="en">Visitor → business lead rate</span></td>
+        <td class="num">0%</td><td class="num">5,88%</td>
+        <td><span class="vi">Bắt đầu có chuyển đổi ở cửa sổ ngắn</span><span class="cn">短窗口开始出现转化</span><span class="en">Conversion beginning in the short window</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ hiển thị → khách truy cập</span><span class="cn">曝光 → 访客转化率</span><span class="en">Impression → visitor rate</span></td>
+        <td class="num">0%</td><td class="num">3,09%</td>
+        <td><span class="vi">576 lượt hiển thị tạo 17 lượt xem trang</span><span class="cn">576 次曝光带来 17 次页面浏览</span><span class="en">576 impressions generated 17 page views</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Đơn hàng chưa xử lý (nr_ord_cnt)</span><span class="cn">未处理订单（nr_ord_cnt）</span><span class="en">Unprocessed orders (nr_ord_cnt)</span></td>
+        <td class="num">0</td><td class="num">—</td>
+        <td><span class="vi">Không có đơn tồn</span><span class="cn">无积压订单</span><span class="en">No backlog orders</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ đúng hạn (on_time_rate)</span><span class="cn">准时率（on_time_rate）</span><span class="en">On-time rate (on_time_rate)</span></td>
+        <td class="num">100%</td><td class="num">—</td>
+        <td><span class="vi">Duy trì tốt, không có rủi ro vận hành</span><span class="cn">保持良好，无运营风险</span><span class="en">Maintained, no operational risk</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Xu hướng so kỳ trước</span><span class="cn">环比趋势</span><span class="en">Trend vs previous period</span></td>
+        <td class="num">0%</td><td class="num">—</td>
+        <td><span class="vi">Không có biến động MoM (nền so sánh bằng 0)</span><span class="cn">无环比变动（对比基数为 0）</span><span class="en">No MoM change (comparison base is zero)</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note"><span class="vi">Nguồn: CRM chẩn đoán chiều BUSINESS_OPPORTUNITIES, kỳ dữ liệu 04/10/2026. Các mốc avg_* / top10_avg_* là giá trị tham chiếu ngành do CRM cung cấp trong cùng payload.</span><span class="cn">来源：CRM 诊断 BUSINESS_OPPORTUNITIES 维度，数据期 2026/10/04。avg_* / top10_avg_* 为 CRM 在同一返回中提供的行业参考值。</span><span class="en">Source: CRM diagnosis dimension BUSINESS_OPPORTUNITIES, data period 04/10/2026. The avg_* / top10_avg_* values are industry reference values supplied by CRM in the same payload.</span></p>
+</section>
+
+<!-- ===== 05 ===== -->
+<section class="sec" id="s5">
+  <div class="eyebrow">SECTION 05</div>
+  <h2><span class="vi">Giao Dịch (TRADE)</span><span class="cn">交易（TRADE）</span><span class="en">Trade (TRADE)</span></h2>
+  <div class="blk-vi"><p class="lead">Không có giao dịch nào phát sinh trong 30 ngày. Đây là chỉ số chặn sao giao dịch và chặn toàn bộ chuỗi doanh thu.</p></div>
+  <div class="blk-cn"><p class="lead">30 天内未产生任何交易。该指标卡住了交易星，也卡住了整条营收链路。</p></div>
+  <div class="blk-en"><p class="lead">No transactions occurred in 30 days. This metric blocks the trade star and the entire revenue chain.</p></div>
+
+  <div class="stats">
+    <div class="stat bad"><div class="v">0</div><div class="l"><span class="vi">Đơn thành công 30 ngày</span><span class="cn">30 天成功订单</span><span class="en">Successful orders, 30 days</span></div><div class="c dn"><span class="vi">Cùng kỳ trước: 0</span><span class="cn">上期：0</span><span class="en">Previous period: 0</span></div></div>
+    <div class="stat bad"><div class="v">$0</div><div class="l"><span class="vi">Doanh thu 30 ngày</span><span class="cn">30 天营收</span><span class="en">Revenue, 30 days</span></div><div class="c dn"><span class="vi">Cùng kỳ trước: $0</span><span class="cn">上期：$0</span><span class="en">Previous period: $0</span></div></div>
+    <div class="stat bad"><div class="v">0%</div><div class="l"><span class="vi">Tỉ lệ người mua → đơn (ab_payord_rate)</span><span class="cn">买家 → 订单转化率（ab_payord_rate）</span><span class="en">Buyer → order rate (ab_payord_rate)</span></div><div class="c dn"><span class="vi">Chưa phát sinh đơn</span><span class="cn">尚未产生订单</span><span class="en">No orders yet</span></div></div>
+    <div class="stat bad"><div class="v">0%</div><div class="l"><span class="vi">Tỉ lệ UV → đơn (uv_payord_rate)</span><span class="cn">UV → 订单转化率（uv_payord_rate）</span><span class="en">UV → order rate (uv_payord_rate)</span></div><div class="c dn"><span class="vi">Chưa phát sinh đơn</span><span class="cn">尚未产生订单</span><span class="en">No orders yet</span></div></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Chỉ số</span><span class="cn">指标</span><span class="en">Metric</span></th>
+      <th class="num"><span class="vi">30 ngày</span><span class="cn">30 天</span><span class="en">30 days</span></th>
+      <th class="num"><span class="vi">7 ngày</span><span class="cn">7 天</span><span class="en">7 days</span></th>
+      <th class="num"><span class="vi">Cùng kỳ trước</span><span class="cn">上期</span><span class="en">Previous</span></th>
+      <th><span class="vi">Ý nghĩa</span><span class="cn">含义</span><span class="en">Meaning</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Đơn hàng thành công (suc_ord_cnt)</span><span class="cn">成功订单（suc_ord_cnt）</span><span class="en">Successful orders (suc_ord_cnt)</span></td>
+        <td class="num">0</td><td class="num">0</td><td class="num">0</td>
+        <td><span class="vi">Chưa có đơn nào</span><span class="cn">尚无任何订单</span><span class="en">No orders at all</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Doanh thu (suc_ord_amt)</span><span class="cn">营收（suc_ord_amt）</span><span class="en">Revenue (suc_ord_amt)</span></td>
+        <td class="num">$0</td><td class="num">$0</td><td class="num">$0</td>
+        <td><span class="vi">Chưa có doanh thu</span><span class="cn">尚无营收</span><span class="en">No revenue yet</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Đơn chưa xử lý (nr_ord_cnt)</span><span class="cn">未处理订单（nr_ord_cnt）</span><span class="en">Unprocessed orders (nr_ord_cnt)</span></td>
+        <td class="num">0</td><td class="num">—</td><td class="num">0</td>
+        <td><span class="vi">Không tồn đơn</span><span class="cn">无积压订单</span><span class="en">No backlog</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ kinh doanh → đơn</span><span class="cn">商机 → 订单转化率</span><span class="en">Business lead → order rate</span></td>
+        <td class="num">0%</td><td class="num">0%</td><td class="num">0%</td>
+        <td><span class="vi">Chưa chuyển đổi được lượt kinh doanh</span><span class="cn">商机尚未转化</span><span class="en">Leads not yet converted</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Người mua VIP hoạt động</span><span class="cn">活跃 VIP 买家</span><span class="en">Active VIP buyers</span></td>
+        <td class="num">1</td><td class="num">—</td><td class="num">0</td>
+        <td><span class="tag-up"><span class="vi">Tăng từ 0 lên 1</span><span class="cn">由 0 增至 1</span><span class="en">Up from 0 to 1</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ đúng hạn</span><span class="cn">准时率</span><span class="en">On-time rate</span></td>
+        <td class="num">100%</td><td class="num">—</td><td class="num">100%</td>
+        <td><span class="vi">Không có rủi ro vận hành</span><span class="cn">无运营风险</span><span class="en">No operational risk</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="insight">
+    <div class="t"><span class="vi">NHẬN ĐỊNH</span><span class="cn">判断</span><span class="en">ASSESSMENT</span></div>
+    <div class="blk-vi"><p>Cửa hàng có đủ điều kiện vận hành (đúng hạn 100%, phản hồi 26 giây) nhưng <strong>chưa có dòng đơn</strong>. Nguyên nhân nằm ở phía trước phễu: thiếu UV quốc tế và thiếu sản phẩm tốt để được phân phối hiển thị. Vì vậy ưu tiên xử lý là sản phẩm và lưu lượng, không phải cải thiện khâu giao hàng.</p></div>
+    <div class="blk-cn"><p>店铺具备运营条件（准时率 100%、回复 26 秒），但<strong>尚无订单流</strong>。原因在漏斗前端：缺少国际 UV，也缺少可获得展示分发的优质商品。因此优先事项是商品与流量，而非改善交付环节。</p></div>
+    <div class="blk-en"><p>The storefront is operationally ready (100% on-time, 26-second replies) but <strong>has no order flow</strong>. The cause sits upstream in the funnel: insufficient international UVs and too few good products to earn display distribution. The priority is therefore products and traffic, not delivery.</p></div>
+  </div>
+</section>
+
+<!-- ===== 06 ===== -->
+<section class="sec" id="s6">
+  <div class="eyebrow">SECTION 06</div>
+  <h2><span class="vi">Sản Phẩm (PRODUCT)</span><span class="cn">产品（PRODUCT）</span><span class="en">Products (PRODUCT)</span></h2>
+  <div class="blk-vi"><p class="lead">Số lượng sản phẩm tăng mạnh nhưng chất lượng chưa theo kịp: 233 sản phẩm hợp lệ mà không có sản phẩm nào được xếp loại tốt. Đây là nút thắt lớn nhất của cửa hàng trong kỳ.</p></div>
+  <div class="blk-cn"><p class="lead">商品数量大幅增长，但质量未能跟上：233 款有效商品中没有任何一款被评为优质。这是本期店铺最大的瓶颈。</p></div>
+  <div class="blk-en"><p class="lead">Product volume grew sharply but quality has not kept pace: 233 valid products, none rated good. This is the storefront's biggest bottleneck for the period.</p></div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 6.1 — Sản phẩm hợp lệ và sản phẩm tốt: cửa hàng vs TB ngành vs Top ngành (2×TB)</span><span class="cn">图 6.1 — 有效商品与优质商品：店铺 vs 行业平均 vs 行业 Top（2×平均）</span><span class="en">Chart 6.1 — Valid and good products: storefront vs industry average vs industry top (2× average)</span></h4>
+    <div class="cap"><span class="vi">Mốc ngành lấy từ công cụ benchmark CRM, cửa sổ 180 ngày. Sản phẩm hợp lệ/tốt là chỉ số tồn (không phụ thuộc cửa sổ thời gian) nên so sánh trực tiếp được.</span><span class="cn">行业基准取自 CRM 对标工具，180 天窗口。有效/优质商品为存量指标（不随窗口变化），可直接比较。</span><span class="en">Industry benchmarks come from the CRM benchmark tool over a 180-day window. Valid/good product counts are stock metrics (window-independent), so they compare directly.</span></div>
+    <div class="cv"><canvas id="c7"></canvas></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Chỉ số sản phẩm</span><span class="cn">商品指标</span><span class="en">Product metric</span></th>
+      <th class="num"><span class="vi">Kỳ này</span><span class="cn">本期</span><span class="en">This period</span></th>
+      <th class="num"><span class="vi">Cùng kỳ trước</span><span class="cn">上期</span><span class="en">Previous</span></th>
+      <th class="num"><span class="vi">Biến động</span><span class="cn">变动</span><span class="en">Change</span></th>
+      <th><span class="vi">Ghi chú</span><span class="cn">备注</span><span class="en">Notes</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Sản phẩm hợp lệ (valid_prod_cnt)</span><span class="cn">有效商品（valid_prod_cnt）</span><span class="en">Valid products (valid_prod_cnt)</span></td>
+        <td class="num">233</td><td class="num">63</td><td class="num"><span class="tag-up">+269,84%</span></td>
+        <td><span class="vi">Tăng rất mạnh về số lượng</span><span class="cn">数量增长强劲</span><span class="en">Strong growth in volume</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm có hiển thị (imps_prod_cnt_lst30d)</span><span class="cn">有曝光的商品（imps_prod_cnt_lst30d）</span><span class="en">Products with impressions (imps_prod_cnt_lst30d)</span></td>
+        <td class="num">175</td><td class="num">44</td><td class="num"><span class="tag-up">+297,73%</span></td>
+        <td><span class="vi">Đã được phân phối hiển thị</span><span class="cn">已获得展示分发</span><span class="en">Receiving display distribution</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm mới đăng 30 ngày</span><span class="cn">30 天新增商品</span><span class="en">New listings in 30 days</span></td>
+        <td class="num">140</td><td class="num">0</td><td class="num"><span class="tag-up"><span class="vi">Mới</span><span class="cn">新增</span><span class="en">New</span></span></td>
+        <td><span class="vi">Nhịp đăng sản phẩm tốt</span><span class="cn">上架节奏良好</span><span class="en">Healthy listing cadence</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm có click</span><span class="cn">有点击的商品</span><span class="en">Products with clicks</span></td>
+        <td class="num">10</td><td class="num">0</td><td class="num"><span class="tag-up"><span class="vi">Mới</span><span class="cn">新增</span><span class="en">New</span></span></td>
+        <td><span class="vi">Chỉ 10 sản phẩm thu hút click</span><span class="cn">仅 10 款商品吸引点击</span><span class="en">Only 10 products attract clicks</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm đang giao dịch (on_trade_prod_cnt)</span><span class="cn">在交易商品（on_trade_prod_cnt）</span><span class="en">Products in trade (on_trade_prod_cnt)</span></td>
+        <td class="num">27</td><td class="num">0</td><td class="num"><span class="tag-up"><span class="vi">Mới</span><span class="cn">新增</span><span class="en">New</span></span></td>
+        <td><span class="vi">27 sản phẩm đã có giao dịch</span><span class="cn">27 款商品已有交易</span><span class="en">27 products already have transactions</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm xu hướng giao dịch</span><span class="cn">交易趋势商品</span><span class="en">Trade-trend products</span></td>
+        <td class="num">12</td><td class="num">—</td><td class="num"><span class="tag-nt">—</span></td>
+        <td><span class="vi">Nhóm sản phẩm có tiềm năng</span><span class="cn">具潜力的商品组</span><span class="en">Products with potential</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm nhận RFQ (rc_product_count)</span><span class="cn">收到 RFQ 的商品（rc_product_count）</span><span class="en">Products receiving RFQs (rc_product_count)</span></td>
+        <td class="num">21</td><td class="num">146</td><td class="num"><span class="tag-dn">−85,62%</span></td>
+        <td><strong><span class="vi">Giảm mạnh — tín hiệu cần chú ý nhất</span><span class="cn">大幅下滑 — 最需关注的信号</span><span class="en">Sharp decline — the signal to watch</span></strong></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Sản phẩm tốt (good_prod_cnt)</span><span class="cn">优质商品（good_prod_cnt）</span><span class="en">Good products (good_prod_cnt)</span></strong></td>
+        <td class="num">0</td><td class="num">0</td><td class="num"><span class="tag-dn"><span class="vi">Không đổi</span><span class="cn">无变化</span><span class="en">Unchanged</span></span></td>
+        <td><span class="vi">Không có sản phẩm nào được xếp loại tốt</span><span class="cn">没有任何商品被评为优质</span><span class="en">No product rated good</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm hot (hot_prod_cnt)</span><span class="cn">爆款商品（hot_prod_cnt）</span><span class="en">Hot products (hot_prod_cnt)</span></td>
+        <td class="num">0</td><td class="num">0</td><td class="num"><span class="tag-dn"><span class="vi">Không đổi</span><span class="cn">无变化</span><span class="en">Unchanged</span></span></td>
+        <td><span class="vi">Không có sản phẩm hot</span><span class="cn">无爆款商品</span><span class="en">No hot products</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm có người mua hoạt động (ab_prod_30d)</span><span class="cn">有活跃买家的商品（ab_prod_30d）</span><span class="en">Products with active buyers (ab_prod_30d)</span></td>
+        <td class="num">1</td><td class="num">0</td><td class="num"><span class="tag-up">+1</span></td>
+        <td><span class="vi">Chỉ 1 sản phẩm kéo được người mua</span><span class="cn">仅 1 款商品带来买家</span><span class="en">Only 1 product drew a buyer</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="alert">
+    <div class="t"><span class="vi">CẢNH BÁO: SỐ LƯỢNG TĂNG NHƯNG CHẤT LƯỢNG ĐI NGANG</span><span class="cn">警示：数量增长但质量持平</span><span class="en">WARNING: VOLUME UP, QUALITY FLAT</span></div>
+    <div class="blk-vi"><p>Sản phẩm hợp lệ tăng +269,84% nhưng sản phẩm tốt vẫn bằng 0 và sản phẩm nhận RFQ giảm −85,62%. Nghĩa là nhịp đăng sản phẩm mới <strong>chưa chuyển hoá thành chất lượng</strong> theo tiêu chí của sàn. Đây là việc phải xử lý trước khi tăng ngân sách quảng cáo — nếu đẩy lưu lượng vào một danh mục không có sản phẩm tốt, ngân sách sẽ bị tiêu hao mà không tạo đơn.</p></div>
+    <div class="blk-cn"><p>有效商品增长 +269.84%，但优质商品仍为 0，收到 RFQ 的商品下降 −85.62%。即新增上架<strong>尚未按平台标准转化为质量</strong>。这必须在增加广告预算之前解决 — 若把流量导入没有优质商品的类目，预算会被消耗却无法带来订单。</p></div>
+    <div class="blk-en"><p>Valid products rose +269.84% while good products stayed at 0 and products receiving RFQs fell −85.62%. New listings are <strong>not yet converting into quality</strong> by platform standards. This must be fixed before increasing ad spend — pushing traffic into a catalogue without good products burns budget without producing orders.</p></div>
+  </div>
+</section>
+
+<!-- ===== 07 ===== -->
+<section class="sec" id="s7">
+  <div class="eyebrow">SECTION 07</div>
+  <h2><span class="vi">Benchmark Ngành: Khách Hàng vs TB Ngành vs Top Ngành</span><span class="cn">行业对标：客户 vs 行业平均 vs 行业 Top</span><span class="en">Industry Benchmark: Customer vs Industry Average vs Industry Top</span></h2>
+  <div class="blk-vi"><p class="lead">Mốc ngành được lấy từ công cụ benchmark của CRM. Top ngành được ước tính <strong>= 2× TB ngành</strong> theo quy ước thống nhất của báo cáo này (không phải số liệu đo lường trực tiếp từ CRM).</p></div>
+  <div class="blk-cn"><p class="lead">行业基准取自 CRM 对标工具。行业 Top 按本报告统一口径估算为 <strong>= 2× 行业平均</strong>（并非 CRM 直接测量值）。</p></div>
+  <div class="blk-en"><p class="lead">Industry benchmarks come from the CRM benchmark tool. Industry top is estimated as <strong>= 2× industry average</strong> under this report's consistent convention (not a directly measured CRM figure).</p></div>
+
+  <div class="alert">
+    <div class="t"><span class="vi">HAI LƯU Ý BẮT BUỘC KHI ĐỌC PHẦN NÀY</span><span class="cn">阅读本部分必须注意的两点</span><span class="en">TWO MANDATORY CAVEATS FOR THIS SECTION</span></div>
+    <div class="blk-vi">
+      <p><strong>1. Không có mốc ngành riêng cho Việt Nam.</strong> CRM trả về 0 công ty cho nhóm "ngành lv2 + Việt Nam" và 0 công ty cho "ngành lv1 + Việt Nam". Vì vậy TB ngành dưới đây được tính trên 10 công ty thuộc ngành lv2 ở phạm vi <strong>toàn cầu</strong>, không phải mốc riêng của Việt Nam.</p>
+      <p><strong>2. Lệch cửa sổ thời gian.</strong> Số liệu benchmark là luỹ kế <strong>180 ngày</strong>, còn số liệu chẩn đoán của cửa hàng là cửa sổ <strong>7/30 ngày</strong>. Vì vậy chỉ các chỉ số tồn (sản phẩm hợp lệ, sản phẩm tốt) là so sánh trực tiếp được; các chỉ số dòng chảy (UV, người mua, chi phí, đơn, doanh thu) chỉ mang tính tham chiếu định hướng.</p>
+    </div>
+    <div class="blk-cn">
+      <p><strong>1. 没有越南专属行业基准。</strong>CRM 对"二级行业 + 越南"和"一级行业 + 越南"两组均返回 0 家公司。因此下述行业平均基于二级行业的 10 家<strong>全球</strong>公司，而非越南本地基准。</p>
+      <p><strong>2. 时间窗口不一致。</strong>对标数据为 <strong>180 天</strong>累计值，而店铺诊断数据为 <strong>7/30 天</strong>窗口。因此仅存量指标（有效商品、优质商品）可直接比较；流量型指标（UV、买家、成本、订单、营收）仅作方向性参考。</p>
+    </div>
+    <div class="blk-en">
+      <p><strong>1. No Vietnam-specific benchmark exists.</strong> CRM returned 0 companies for both "lv2 industry + Vietnam" and "lv1 industry + Vietnam". The industry average below is therefore computed over 10 <strong>global</strong> lv2 companies, not a Vietnam-specific benchmark.</p>
+      <p><strong>2. Mismatched time windows.</strong> Benchmark data is a <strong>180-day</strong> cumulative figure while storefront diagnosis uses <strong>7/30-day</strong> windows. Only stock metrics (valid products, good products) compare directly; flow metrics (UVs, buyers, cost, orders, revenue) are directional references only.</p>
+    </div>
+  </div>
+
+  <div class="chartbox">
+    <h4><span class="vi">Biểu đồ 7.1 — TB ngành và Top ngành (2×TB) cho các chỉ số benchmark 180 ngày</span><span class="cn">图 7.1 — 180 天对标指标的行业平均与行业 Top（2×平均）</span><span class="en">Chart 7.1 — Industry average and industry top (2× average) for the 180-day benchmark metrics</span></h4>
+    <div class="cap"><span class="vi">Đơn vị hỗn hợp: lượt, người, sản phẩm, USD, ngày. Đọc kèm bảng chi tiết bên dưới.</span><span class="cn">单位混合：次数、人数、商品数、美元、天数。请结合下方明细表阅读。</span><span class="en">Mixed units: counts, people, products, USD, days. Read alongside the detailed table below.</span></div>
+    <div class="cv"><canvas id="c8"></canvas></div>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Chỉ số (180 ngày)</span><span class="cn">指标（180 天）</span><span class="en">Metric (180 days)</span></th>
+      <th class="num"><span class="vi">Khách hàng</span><span class="cn">客户</span><span class="en">Customer</span></th>
+      <th class="num"><span class="vi">TB ngành (10 công ty)</span><span class="cn">行业平均（10 家）</span><span class="en">Industry average (10 companies)</span></th>
+      <th class="num"><span class="vi">Top ngành (2×TB)</span><span class="cn">行业 Top（2×平均）</span><span class="en">Industry top (2× average)</span></th>
+      <th class="num"><span class="vi">Khách / TB ngành</span><span class="cn">客户/行业平均</span><span class="en">Customer / average</span></th>
+      <th><span class="vi">So sánh</span><span class="cn">比较</span><span class="en">Comparison</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Sản phẩm hợp lệ (valid_prod_cnt)</span><span class="cn">有效商品（valid_prod_cnt）</span><span class="en">Valid products (valid_prod_cnt)</span></td>
+        <td class="num">233</td><td class="num">2.442,9</td><td class="num">4.885,8</td><td class="num">9,5%</td>
+        <td><span class="tag-dn"><span class="vi">Dưới xa</span><span class="cn">远低于</span><span class="en">Far below</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm tốt (good_prod_cnt)</span><span class="cn">优质商品（good_prod_cnt）</span><span class="en">Good products (good_prod_cnt)</span></td>
+        <td class="num">0</td><td class="num">577,3</td><td class="num">1.154,6</td><td class="num">0%</td>
+        <td><span class="tag-dn"><span class="vi">Không có</span><span class="cn">无</span><span class="en">None</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Lượt xem gian hàng (shop_pv_180d)</span><span class="cn">店铺浏览量（shop_pv_180d）</span><span class="en">Storefront page views (shop_pv_180d)</span></td>
+        <td class="num">—</td><td class="num">160.780,9</td><td class="num">321.561,8</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Khách truy cập (shop_uv_180d)</span><span class="cn">访客数（shop_uv_180d）</span><span class="en">Unique visitors (shop_uv_180d)</span></td>
+        <td class="num">—</td><td class="num">58.627,7</td><td class="num">117.255,4</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Người mua quốc tế (oversea_ab_cnt_180d)</span><span class="cn">海外买家（oversea_ab_cnt_180d）</span><span class="en">Overseas buyers (oversea_ab_cnt_180d)</span></td>
+        <td class="num">1 <span class="tag-nt">30d</span></td><td class="num">5.716,7</td><td class="num">11.433,4</td><td class="num">≈0,02%*</td>
+        <td><span class="tag-dn"><span class="vi">Dưới xa</span><span class="cn">远低于</span><span class="en">Far below</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tỉ lệ UV → người mua (duv_ab_rate_180d)</span><span class="cn">UV → 买家转化率（duv_ab_rate_180d）</span><span class="en">UV → buyer rate (duv_ab_rate_180d)</span></td>
+        <td class="num">0% <span class="tag-nt">30d</span></td><td class="num">10,1%</td><td class="num">20,3%</td><td class="num">0%</td>
+        <td><span class="tag-dn"><span class="vi">Dưới xa</span><span class="cn">远低于</span><span class="en">Far below</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Thời gian phản hồi (giờ)</span><span class="cn">回复时长（小时）</span><span class="en">Reply time (hours)</span></td>
+        <td class="num">0,0072 <span class="tag-nt"><span class="vi">kỳ này</span><span class="cn">本期</span><span class="en">current</span></span></td>
+        <td class="num">3,53</td><td class="num">7,06</td><td class="num">—</td>
+        <td><span class="tag-up"><span class="vi">Vượt mốc ngành</span><span class="cn">优于行业基准</span><span class="en">Better than benchmark</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sản phẩm mới đăng (prod_rel_cnt_180d)</span><span class="cn">新上架商品（prod_rel_cnt_180d）</span><span class="en">Products released (prod_rel_cnt_180d)</span></td>
+        <td class="num">140 <span class="tag-nt">30d</span></td><td class="num">466,8</td><td class="num">933,6</td><td class="num">≈30%*</td>
+        <td><span class="tag-wa"><span class="vi">Đang bám</span><span class="cn">接近中</span><span class="en">Catching up</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Tổng chi phí quảng cáo (USD)</span><span class="cn">广告总花费（美元）</span><span class="en">Total advertising cost (USD)</span></td>
+        <td class="num">—</td><td class="num">20.503,97</td><td class="num">41.007,94</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Chi phí P4P (USD)</span><span class="cn">P4P 花费（美元）</span><span class="en">P4P cost (USD)</span></td>
+        <td class="num">—</td><td class="num">8.492,11</td><td class="num">16.984,22</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Chi phí mỗi người mua (CPAB, USD)</span><span class="cn">单买家成本（CPAB，美元）</span><span class="en">Cost per buyer (CPAB, USD)</span></td>
+        <td class="num">—</td><td class="num">3,46</td><td class="num">6,92</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Đơn trả trước (prepay_mord_cnt_180d)</span><span class="cn">预付订单（prepay_mord_cnt_180d）</span><span class="en">Prepaid orders (prepay_mord_cnt_180d)</span></td>
+        <td class="num">0 <span class="tag-nt">30d</span></td><td class="num">557,0</td><td class="num">1.114,0</td><td class="num">0%</td>
+        <td><span class="tag-dn"><span class="vi">Không có</span><span class="cn">无</span><span class="en">None</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Doanh thu nhận được (USD)</span><span class="cn">实收营收（美元）</span><span class="en">Revenue received (USD)</span></td>
+        <td class="num">$0 <span class="tag-nt">30d</span></td><td class="num">904.462,54</td><td class="num">1.808.925,07</td><td class="num">0%</td>
+        <td><span class="tag-dn"><span class="vi">Không có</span><span class="cn">无</span><span class="en">None</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Số ngày đăng nhập (180 ngày)</span><span class="cn">登录天数（180 天）</span><span class="en">Login days (180 days)</span></td>
+        <td class="num">—</td><td class="num">174,6</td><td class="num">349,2</td><td class="num">—</td>
+        <td><span class="tag-nt"><span class="vi">Thiếu dữ liệu</span><span class="cn">缺少数据</span><span class="en">No data</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note"><span class="vi">(*) Các ô có nhãn 30d là giá trị cửa sổ 30 ngày của khách hàng đặt cạnh mốc 180 ngày của ngành; tỉ lệ chỉ mang tính tham chiếu định hướng, không phải so sánh cùng cửa sổ. "TB ngành" là trung bình cộng 10 công ty ngành lv2 toàn cầu do CRM trả về; "Top ngành" = 2× TB ngành theo quy ước của báo cáo. Nguồn: crm-industry-benchmark, ngành lv1 201946504 / lv2 100006664, quốc gia VN (nhóm VN trả về rỗng nên dùng nhóm toàn cầu).</span><span class="cn">(*) 标注 30d 的单元格为客户 30 天窗口的数值，与行业 180 天基准并列；该比率仅为方向性参考，并非同窗口比较。"行业平均"为 CRM 返回的 10 家全球二级行业公司的算术平均；"行业 Top" = 2× 行业平均（本报告口径）。来源：crm-industry-benchmark，一级行业 201946504 / 二级行业 100006664，国家 VN（越南组返回为空，故使用全球组）。</span><span class="en">(*) Cells labelled 30d are the customer's 30-day figures placed next to the industry's 180-day benchmark; ratios are directional references only, not same-window comparisons. "Industry average" is the arithmetic mean of the 10 global lv2 companies returned by CRM; "industry top" = 2× average per this report's convention. Source: crm-industry-benchmark, lv1 201946504 / lv2 100006664, country VN (the VN group returned empty, so the global group is used).</span></p>
+
+  <div class="alert">
+    <div class="t"><span class="vi">CẦN XÁC MINH: NGÀNH GHI NHẬN TRÊN CRM</span><span class="cn">需核实：CRM 记录的行业</span><span class="en">TO VERIFY: INDUSTRY RECORDED IN CRM</span></div>
+    <div class="blk-vi"><p>CRM xếp khách hàng này vào ngành <strong>Pet Supplies</strong> (lv1 201946504, lv2 Pet Products) và chiều chẩn đoán PRODUCT cũng trả về <code>main_cate_lv1_desc = Pet Supplies</code>. Trong khi đó tên doanh nghiệp là <strong>LEGEND TEXTILE</strong> và website là <code>detmayhuyenthao.vn</code> (dệt may). Nếu ngành ghi nhận trên CRM chưa đúng, toàn bộ mốc benchmark ngành ở phần này cần được tính lại theo ngành thực tế. Đây là việc cần kiểm tra trước khi dùng số liệu để tư vấn khách.</p></div>
+    <div class="blk-cn"><p>CRM 将本客户归入 <strong>Pet Supplies</strong> 行业（一级 201946504，二级 Pet Products），PRODUCT 诊断维度也返回 <code>main_cate_lv1_desc = Pet Supplies</code>。而企业名称为 <strong>LEGEND TEXTILE</strong>，网站为 <code>detmayhuyenthao.vn</code>（纺织服装）。若 CRM 记录的行业有误，本部分全部行业对标基准需按实际行业重算。在用数据向客户提供咨询前应先行核实。</p></div>
+    <div class="blk-en"><p>CRM categorises this customer under <strong>Pet Supplies</strong> (lv1 201946504, lv2 Pet Products), and the PRODUCT diagnosis dimension also returns <code>main_cate_lv1_desc = Pet Supplies</code>. Yet the company is <strong>LEGEND TEXTILE</strong> with the website <code>detmayhuyenthao.vn</code> (textile and garment). If the CRM industry is wrong, every industry benchmark in this section must be recomputed against the actual industry. Verify this before using the figures in customer conversations.</p></div>
+  </div>
+</section>
+
+<!-- ===== 08 ===== -->
+<section class="sec" id="s8">
+  <div class="eyebrow">SECTION 08</div>
+  <h2><span class="vi">Khoảng Trống Ưu Tiên &amp; Hành Động Đề Xuất</span><span class="cn">优先缺口与建议行动</span><span class="en">Priority Gaps &amp; Recommended Actions</span></h2>
+  <div class="blk-vi"><p class="lead">Thứ tự ưu tiên được xếp theo mức độ chặn: việc nào đang chặn các việc khác thì làm trước. Sản phẩm tốt và lưu lượng quốc tế là hai việc chặn mọi kết quả phía sau.</p></div>
+  <div class="blk-cn"><p class="lead">优先级按阻塞程度排序：会阻塞其他事项的先做。优质商品与国际流量是阻塞后续一切结果的两项。</p></div>
+  <div class="blk-en"><p class="lead">Priority is ordered by blocking effect: whatever blocks other work goes first. Good products and international traffic block every downstream result.</p></div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Ưu tiên</span><span class="cn">优先级</span><span class="en">Priority</span></th>
+      <th><span class="vi">Khoảng trống</span><span class="cn">缺口</span><span class="en">Gap</span></th>
+      <th><span class="vi">Hành động đề xuất</span><span class="cn">建议行动</span><span class="en">Recommended action</span></th>
+      <th><span class="vi">Mốc cần đạt</span><span class="cn">目标值</span><span class="en">Target</span></th>
+      <th><span class="vi">Thời gian</span><span class="cn">时间</span><span class="en">Timeline</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="tag-dn">P1</span></td>
+        <td><strong><span class="vi">0 sản phẩm tốt</span><span class="cn">0 款优质商品</span><span class="en">0 good products</span></strong> — <span class="vi">chặn sao sản phẩm và chặn phân phối hiển thị</span><span class="cn">卡住商品星与展示分发</span><span class="en">blocks the product star and display distribution</span></td>
+        <td><span class="vi">Rà lại 233 sản phẩm hợp lệ theo tiêu chí sản phẩm tốt của sàn: ảnh chính, thông số, thuộc tính, tiêu đề. Tập trung nâng 67 sản phẩm lên mức tốt thay vì đăng thêm sản phẩm mới.</span><span class="cn">按平台优质商品标准复核 233 款有效商品：主图、参数、属性、标题。集中把 67 款提升至优质，而不是继续新增上架。</span><span class="en">Re-audit the 233 valid products against the platform's good-product criteria: main image, specs, attributes, title. Focus on upgrading 67 products rather than listing more.</span></td>
+        <td><span class="vi">+67 sản phẩm tốt</span><span class="cn">+67 款优质商品</span><span class="en">+67 good products</span></td>
+        <td><span class="vi">2–4 tuần</span><span class="cn">2–4 周</span><span class="en">2–4 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-dn">P1</span></td>
+        <td><strong><span class="vi">Lưu lượng quốc tế gần như bằng 0</span><span class="cn">国际流量近乎为零</span><span class="en">International traffic near zero</span></strong> — <span class="vi">48,39% lưu lượng đến từ Việt Nam</span><span class="cn">48.39% 流量来自越南</span><span class="en">48.39% of traffic comes from Vietnam</span></td>
+        <td><span class="vi">Đẩy từ khoá tiếng Anh theo sản phẩm chủ lực; bật quảng cáo từ khoá (KWA) cho nhóm từ khoá mang lại 27 sản phẩm đang giao dịch; kiểm tra lại cài đặt thị trường mục tiêu của gian hàng.</span><span class="cn">围绕主推商品布局英文关键词；对带来 27 款在交易商品的关键词组投放关键词广告（KWA）；复核店铺目标市场设置。</span><span class="en">Push English keywords around core products; run keyword advertising (KWA) on the keyword cluster behind the 27 in-trade products; re-check the storefront's target-market settings.</span></td>
+        <td><span class="vi">UV quốc tế tăng; tỉ trọng VN dưới 30%</span><span class="cn">国际 UV 提升；越南占比低于 30%</span><span class="en">Higher international UVs; Vietnam share below 30%</span></td>
+        <td><span class="vi">2–6 tuần</span><span class="cn">2–6 周</span><span class="en">2–6 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-dn">P1</span></td>
+        <td><strong><span class="vi">0 đơn hàng, 0 doanh thu</span><span class="cn">0 订单、0 营收</span><span class="en">0 orders, 0 revenue</span></strong> — <span class="vi">trong 30 ngày</span><span class="cn">（30 天内）</span><span class="en">over 30 days</span></td>
+        <td><span class="vi">Dùng 27 sản phẩm đang giao dịch và 12 sản phẩm xu hướng làm danh mục chào hàng chủ lực; gửi RFQ/báo giá chủ động cho 1 người mua VIP đang có; ưu tiên chốt đơn đầu tiên để mở sao giao dịch.</span><span class="cn">以 27 款在交易商品和 12 款趋势商品作为主推目录；主动向现有 1 位 VIP 买家发送 RFQ/报价；优先拿下首单以解锁交易星。</span><span class="en">Use the 27 in-trade and 12 trend products as the core pitch catalogue; proactively send RFQs/quotes to the existing VIP buyer; prioritise closing the first order to unlock the trade star.</span></td>
+        <td><span class="vi">≥1 đơn thành công (GMV &gt; 0)</span><span class="cn">≥1 笔成功订单（GMV &gt; 0）</span><span class="en">≥1 successful order (GMV &gt; 0)</span></td>
+        <td><span class="vi">1–4 tuần</span><span class="cn">1–4 周</span><span class="en">1–4 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-wa">P2</span></td>
+        <td><span class="vi">Rớt 85,62% số sản phẩm nhận RFQ (từ 146 xuống 21)</span><span class="cn">收到 RFQ 的商品下降 85.62%（由 146 降至 21）</span><span class="en">Products receiving RFQs fell 85.62% (146 → 21)</span></td>
+        <td><span class="vi">Soát nhóm sản phẩm từng nhận RFQ ở kỳ trước để tìm nguyên nhân (hết hàng, đổi giá, hết hiệu lực niêm yết) và khôi phục.</span><span class="cn">排查上期曾收到 RFQ 的商品组，找出原因（缺货、改价、挂牌失效）并恢复。</span><span class="en">Review the product group that previously received RFQs to find the cause (stock-out, price change, listing expiry) and restore it.</span></td>
+        <td><span class="vi">Khôi phục về mức ≥100</span><span class="cn">恢复至 ≥100</span><span class="en">Restore to ≥100</span></td>
+        <td><span class="vi">1–2 tuần</span><span class="cn">1–2 周</span><span class="en">1–2 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-wa">P2</span></td>
+        <td><span class="vi">Thiếu 58 UV marketing và thiếu lượt phản hồi dịch vụ</span><span class="cn">缺 58 个营销 UV 及服务回复次数</span><span class="en">Short 58 marketing UVs and service replies</span></td>
+        <td><span class="vi">Bổ sung 58 UV marketing qua quảng cáo; tăng số lượt phản hồi dịch vụ để mở sao dịch vụ (thời gian phản hồi hiện rất tốt, chỉ thiếu khối lượng).</span><span class="cn">通过广告补足 58 个营销 UV；提升服务回复次数以解锁服务星（当前回复时长很好，仅缺数量）。</span><span class="en">Add 58 marketing UVs via advertising; increase service reply volume to unlock the service star (reply time is already excellent — only volume is missing).</span></td>
+        <td><span class="vi">Sao marketing &gt; 0, sao dịch vụ &gt; 0</span><span class="cn">营销星 &gt; 0、服务星 &gt; 0</span><span class="en">Marketing star &gt; 0, service star &gt; 0</span></td>
+        <td><span class="vi">2–4 tuần</span><span class="cn">2–4 周</span><span class="en">2–4 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-wa">P2</span></td>
+        <td><span class="vi">0 phản hồi (fb_cnt) so với TB ngành 24,37</span><span class="cn">0 条反馈（fb_cnt），行业平均 24.37</span><span class="en">0 feedback (fb_cnt) vs industry average 24.37</span></td>
+        <td><span class="vi">Chủ động xin đánh giá sau mỗi lượt giao dịch; đưa đơn hàng nhỏ lên sàn để tích luỹ phản hồi hợp lệ.</span><span class="cn">每次交易后主动索取评价；将小额订单搬到平台以积累有效反馈。</span><span class="en">Proactively request reviews after each transaction; move small orders on-platform to accumulate valid feedback.</span></td>
+        <td><span class="vi">fb_cnt &gt; 0, tiệm cận 24</span><span class="cn">fb_cnt &gt; 0，接近 24</span><span class="en">fb_cnt &gt; 0, approaching 24</span></td>
+        <td><span class="vi">4–8 tuần</span><span class="cn">4–8 周</span><span class="en">4–8 weeks</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-nt">P3</span></td>
+        <td><span class="vi">Danh mục sản phẩm còn mỏng so với TB ngành (233 vs 2.442,9)</span><span class="cn">商品目录相对行业平均偏薄（233 vs 2,442.9）</span><span class="en">Catalogue thin vs industry average (233 vs 2,442.9)</span></td>
+        <td><span class="vi">Sau khi đạt mốc sản phẩm tốt, mở rộng danh mục theo hướng chất lượng: mỗi sản phẩm tốt đi kèm biến thể và thuộc tính đầy đủ.</span><span class="cn">在达到优质商品目标后，按质量方向扩充目录：每款优质商品配套完整变体与属性。</span><span class="en">Once the good-product target is met, expand the catalogue on a quality basis: each good product backed by full variants and attributes.</span></td>
+        <td><span class="vi">Tiệm cận 1.000 sản phẩm hợp lệ</span><span class="cn">接近 1,000 款有效商品</span><span class="en">Approach 1,000 valid products</span></td>
+        <td><span class="vi">3–6 tháng</span><span class="cn">3–6 个月</span><span class="en">3–6 months</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-nt">P3</span></td>
+        <td><span class="vi">Lệch thị trường: Hoa Kỳ chiếm 23,41% nhu cầu ngành nhưng chỉ 6,45% lưu lượng cửa hàng</span><span class="cn">市场错配：美国占行业需求 23.41%，仅占店铺流量 6.45%</span><span class="en">Market mismatch: the US is 23.41% of category demand but only 6.45% of storefront traffic</span></td>
+        <td><span class="vi">Xây nội dung và từ khoá riêng cho thị trường Hoa Kỳ; kiểm tra yêu cầu chứng nhận/kho bãi cho thị trường này trước khi đẩy ngân sách.</span><span class="cn">为美国市场单独建设内容与关键词；在投入预算前核实该市场的认证/仓储要求。</span><span class="en">Build dedicated content and keywords for the US market; check certification and warehousing requirements before committing budget.</span></td>
+        <td><span class="vi">Tăng tỉ trọng lưu lượng từ Mỹ</span><span class="cn">提升来自美国的流量占比</span><span class="en">Higher share of traffic from the US</span></td>
+        <td><span class="vi">2–4 tháng</span><span class="cn">2–4 个月</span><span class="en">2–4 months</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag-nt">P3</span></td>
+        <td><span class="vi">Ngành ghi nhận trên CRM cần xác minh (Pet Supplies vs dệt may)</span><span class="cn">CRM 记录的行业需核实（Pet Supplies vs 纺织）</span><span class="en">CRM industry to verify (Pet Supplies vs textile)</span></td>
+        <td><span class="vi">Xác minh lại ngành/hạng mục của gian hàng và cập nhật CRM để mốc benchmark phản ánh đúng ngành thực tế.</span><span class="cn">重新核实店铺的行业/类目并更新 CRM，使对标基准反映真实行业。</span><span class="en">Re-verify the storefront's industry/category and update CRM so benchmarks reflect the real industry.</span></td>
+        <td><span class="vi">Ngành CRM khớp ngành thực</span><span class="cn">CRM 行业与实际一致</span><span class="en">CRM industry matches reality</span></td>
+        <td><span class="vi">1 tuần</span><span class="cn">1 周</span><span class="en">1 week</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="hl">
+    <div class="t"><span class="vi">LỢI THẾ CẦN GIỮ</span><span class="cn">需保持的优势</span><span class="en">ADVANTAGES TO HOLD</span></div>
+    <div class="blk-vi"><p>Cửa hàng đang có hai điểm mạnh mà phần lớn đối thủ không có: <strong>thời gian phản hồi 0,0072 giờ (≈26 giây)</strong> so với mức yêu cầu còn dư 23,99 giờ, và <strong>tỷ lệ giao hàng đúng hạn 100%</strong>. Đây là nền tảng để thuyết phục người mua thử đơn đầu tiên, và là lý do khiến việc đẩy lưu lượng có ý nghĩa — hạ tầng vận hành đã sẵn sàng, chỉ thiếu người mua và đơn hàng.</p></div>
+    <div class="blk-cn"><p>店铺拥有多数对手不具备的两项优势：<strong>回复时长 0.0072 小时（≈26 秒）</strong>，优于要求 23.99 小时；以及<strong>准时交付率 100%</strong>。这是说服买家试单的基础，也是推动流量有意义的原因 — 运营基础已就绪，仅缺买家与订单。</p></div>
+    <div class="blk-en"><p>The storefront holds two strengths most competitors lack: a <strong>reply time of 0.0072 hours (≈26 seconds)</strong>, 23.99 hours better than required, and a <strong>100% on-time delivery rate</strong>. That is the basis for persuading buyers to place a first order, and the reason pushing traffic makes sense — operations are ready, only buyers and orders are missing.</p></div>
+  </div>
+</section>
+
+<!-- ===== 09 ===== -->
+<section class="sec" id="s9">
+  <div class="eyebrow">SECTION 09</div>
+  <h2><span class="vi">Phương Pháp, Nguồn Dữ Liệu &amp; Giới Hạn</span><span class="cn">方法、数据来源与局限</span><span class="en">Method, Data Sources &amp; Limitations</span></h2>
+
+  <h3><span class="vi">Nguồn dữ liệu</span><span class="cn">数据来源</span><span class="en">Data sources</span></h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Phần</span><span class="cn">部分</span><span class="en">Section</span></th>
+      <th><span class="vi">Nguồn</span><span class="cn">来源</span><span class="en">Source</span></th>
+      <th><span class="vi">Kỳ dữ liệu</span><span class="cn">数据期</span><span class="en">Data period</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="vi">Hồ sơ khách hàng (companyId, ngày hết hạn, AM, trạng thái)</span><span class="cn">客户档案（companyId、到期日、AM、状态）</span><span class="en">Customer profile (companyId, expiry, AM, status)</span></td>
+        <td><span class="vi">CRM — crm-search (pool private), bản ghi companyId 14066775694</span><span class="cn">CRM — crm-search（private 池），记录 companyId 14066775694</span><span class="en">CRM — crm-search (private pool), record companyId 14066775694</span></td>
+        <td>04/10/2026</td>
+      </tr>
+      <tr>
+        <td><span class="vi">Sao cửa hàng, lưu lượng, cơ hội kinh doanh, giao dịch, sản phẩm</span><span class="cn">店铺星级、流量、商机、交易、产品</span><span class="en">Storefront stars, traffic, business opportunities, trade, products</span></td>
+        <td><span class="vi">CRM — crm-diagnosis-report-generate, 5 chiều: STAR_RANK, BUYER_TRAFFIC, BUSINESS_OPPORTUNITIES, TRADE, PRODUCT</span><span class="cn">CRM — crm-diagnosis-report-generate，五个维度：STAR_RANK、BUYER_TRAFFIC、BUSINESS_OPPORTUNITIES、TRADE、PRODUCT</span><span class="en">CRM — crm-diagnosis-report-generate, 5 dimensions: STAR_RANK, BUYER_TRAFFIC, BUSINESS_OPPORTUNITIES, TRADE, PRODUCT</span></td>
+        <td>04/10/2026</td>
+      </tr>
+      <tr>
+        <td><span class="vi">Mốc TB ngành và các mốc tham chiếu ngành</span><span class="cn">行业平均与行业参考值</span><span class="en">Industry average and reference values</span></td>
+        <td><span class="vi">CRM — crm-industry-benchmark (lv1 201946504 / lv2 100006664 / quốc gia VN)</span><span class="cn">CRM — crm-industry-benchmark（一级 201946504 / 二级 100006664 / 国家 VN）</span><span class="en">CRM — crm-industry-benchmark (lv1 201946504 / lv2 100006664 / country VN)</span></td>
+        <td><span class="vi">cửa sổ 180 ngày</span><span class="cn">180 天窗口</span><span class="en">180-day window</span></td>
+      </tr>
+      <tr>
+        <td><span class="vi">Mã ngành lv1/lv2</span><span class="cn">一级/二级行业编码</span><span class="en">lv1/lv2 industry codes</span></td>
+        <td><span class="vi">CRM — industry-mapping</span><span class="cn">CRM — industry-mapping</span><span class="en">CRM — industry-mapping</span></td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3><span class="vi">Quy ước tính toán</span><span class="cn">计算口径</span><span class="en">Calculation conventions</span></h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th><span class="vi">Khái niệm</span><span class="cn">概念</span><span class="en">Concept</span></th>
+      <th><span class="vi">Cách tính</span><span class="cn">算法</span><span class="en">Definition</span></th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><strong><span class="vi">TB ngành</span><span class="cn">行业平均</span><span class="en">Industry average</span></strong></td>
+        <td><span class="vi">Trung bình cộng các chỉ số của nhóm công ty benchmark do CRM trả về (nhóm lv2 + quốc gia trả về rỗng, nên dùng nhóm lv2 toàn cầu gồm 10 công ty)</span><span class="cn">CRM 返回的对标公司组的指标算术平均（二级+国家组为空，故使用 10 家全球二级行业组）</span><span class="en">Arithmetic mean of the benchmark company group returned by CRM (the lv2 + country group was empty, so the 10-company global lv2 group is used)</span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Top ngành</span><span class="cn">行业 Top</span><span class="en">Industry top</span></strong></td>
+        <td><span class="vi">= 2 × TB ngành (quy ước của báo cáo theo yêu cầu; <strong>không phải số liệu đo lường trực tiếp</strong>)</span><span class="cn">= 2 × 行业平均（按要求的报告口径；<strong>并非直接测量值</strong>）</span><span class="en">= 2 × industry average (this report's convention as requested; <strong>not a directly measured figure</strong>)</span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Cùng kỳ trước</span><span class="cn">上期</span><span class="en">Previous period</span></strong></td>
+        <td><span class="vi">Các trường có hậu tố _last_30d trong payload chẩn đoán</span><span class="cn">诊断返回中带 _last_30d 后缀的字段</span><span class="en">Fields suffixed _last_30d in the diagnosis payload</span></td>
+      </tr>
+      <tr>
+        <td><strong><span class="vi">Biến động</span><span class="cn">变动</span><span class="en">Change</span></strong></td>
+        <td><span class="vi">Các trường MoM do CRM tính sẵn (rc_product_count_mom, imps_prod_cnt_lst30d_mom, valid_prod_cnt_mom…)</span><span class="cn">CRM 预先计算的环比字段（rc_product_count_mom、imps_prod_cnt_lst30d_mom、valid_prod_cnt_mom 等）</span><span class="en">MoM fields precomputed by CRM (rc_product_count_mom, imps_prod_cnt_lst30d_mom, valid_prod_cnt_mom…)</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3><span class="vi">Giới hạn của báo cáo</span><span class="cn">报告局限</span><span class="en">Limitations</span></h3>
+  <ul>
+    <li><span class="vi"><strong>Không có mốc ngành riêng cho Việt Nam.</strong> Cả hai nhóm "ngành lv2 + VN" và "ngành lv1 + VN" đều trả về rỗng. TB ngành trong báo cáo tính trên 10 công ty toàn cầu.</span><span class="cn"><strong>没有越南专属行业基准。</strong>"二级 + VN"与"一级 + VN"两组均返回为空。报告中的行业平均基于 10 家全球公司。</span><span class="en"><strong>No Vietnam-specific benchmark.</strong> Both "lv2 + VN" and "lv1 + VN" groups returned empty. The industry average is based on 10 global companies.</span></li>
+    <li><span class="vi"><strong>Lệch cửa sổ thời gian.</strong> Benchmark dùng cửa sổ 180 ngày; số liệu cửa hàng dùng 7/30 ngày. Chỉ các chỉ số tồn (sản phẩm hợp lệ, sản phẩm tốt) là so sánh trực tiếp được.</span><span class="cn"><strong>时间窗口不一致。</strong>对标使用 180 天窗口；店铺数据使用 7/30 天。仅存量指标（有效商品、优质商品）可直接比较。</span><span class="en"><strong>Mismatched time windows.</strong> Benchmarks use a 180-day window; storefront data uses 7/30 days. Only stock metrics (valid products, good products) compare directly.</span></li>
+    <li><span class="vi"><strong>Hai chiều chẩn đoán trả về cùng một tập dữ liệu.</strong> BUSINESS_OPPORTUNITIES và TRADE có cùng 70 trường và cùng giá trị; vì vậy Phần 05 không bổ sung chỉ số mới ngoài Phần 04.</span><span class="cn"><strong>两个诊断维度返回同一数据集。</strong>BUSINESS_OPPORTUNITIES 与 TRADE 的 70 个字段及取值完全相同；因此第 05 部分未在第 04 部分之外增加新指标。</span><span class="en"><strong>Two diagnosis dimensions return the same dataset.</strong> BUSINESS_OPPORTUNITIES and TRADE share the same 70 fields with identical values; Section 05 therefore adds no metric beyond Section 04.</span></li>
+    <li><span class="vi"><strong>Một số chỉ số benchmark 180 ngày không có giá trị tương ứng của khách hàng</strong> (chi phí quảng cáo, CPAB, số ngày đăng nhập, UV/PV 180 ngày) — được ghi rõ là "thiếu dữ liệu" thay vì suy diễn.</span><span class="cn"><strong>部分 180 天对标指标没有对应的客户数值</strong>（广告花费、CPAB、登录天数、180 天 UV/PV）— 已明确标注为"缺少数据"，不作推算。</span><span class="en"><strong>Some 180-day benchmark metrics have no matching customer value</strong> (advertising cost, CPAB, login days, 180-day UV/PV) — marked "no data" rather than inferred.</span></li>
+    <li><span class="vi"><strong>Ngành ghi nhận trên CRM cần xác minh</strong> (Pet Supplies trong khi doanh nghiệp là dệt may).</span><span class="cn"><strong>CRM 记录的行业需核实</strong>（Pet Supplies，而企业为纺织）。</span><span class="en"><strong>CRM industry needs verification</strong> (Pet Supplies while the company is in textiles).</span></li>
+    <li><span class="vi">Toàn bộ số liệu lấy nguyên từ phản hồi CRM, không chỉnh sửa hay bổ sung từ nguồn ngoài.</span><span class="cn">全部数据均取自 CRM 返回原文，未作修改或引入外部来源。</span><span class="en">All figures are taken verbatim from CRM responses, with no edits or external sourcing.</span></li>
+  </ul>
+
+  <h3><span class="vi">Về skill được yêu cầu</span><span class="cn">关于所要求的 Skill</span><span class="en">About the requested skill</span></h3>
+  <div class="alert">
+    <div class="t"><span class="vi">SKILL alibaba-monthly-ops-report KHÔNG TỒN TẠI</span><span class="cn">Skill alibaba-monthly-ops-report 不存在</span><span class="en">SKILL alibaba-monthly-ops-report DOES NOT EXIST</span></div>
+    <div class="blk-vi"><p>Đã tra catalog skill nội bộ (130 skill) và skills.sh — không có skill nào tên <code>alibaba-monthly-ops-report</code>. Báo cáo này được lập bằng capability gần nhất đang có: CRM CLI <code>ggs-crm</code> với lệnh <code>crm-diagnosis-report-generate</code> (5 chiều chẩn đoán) và <code>crm-industry-benchmark</code> (mốc ngành). Nếu tồn tại mẫu báo cáo vận hành tháng chuẩn của đội, vui lòng cung cấp để báo cáo được lập đúng định dạng.</p></div>
+    <div class="blk-cn"><p>已检索内部 Skill 目录（130 个）与 skills.sh — 不存在名为 <code>alibaba-monthly-ops-report</code> 的 Skill。本报告使用现有最接近的能力完成：CRM CLI <code>ggs-crm</code> 的 <code>crm-diagnosis-report-generate</code>（五维诊断）与 <code>crm-industry-benchmark</code>（行业基准）。如团队存在标准月度运营报告模板，请提供以便按正确格式重做。</p></div>
+    <div class="blk-en"><p>The internal skill catalogue (130 skills) and skills.sh were searched — no skill named <code>alibaba-monthly-ops-report</code> exists. This report was produced with the closest available capability: the CRM CLI <code>ggs-crm</code> using <code>crm-diagnosis-report-generate</code> (5 diagnosis dimensions) and <code>crm-industry-benchmark</code> (industry benchmarks). If the team has a standard monthly operations report template, please share it so the report can be rebuilt in the correct format.</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="doc">
+  <div class="top">
+    <div class="wrap" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <img src="https://s.alicdn.com/@logo/logo_en_light_horizontal_default_full.png" height="20" alt="Alibaba.com">
+      <span style="font-size:12px">Alibaba.com — GGS Vietnam</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h6><span class="vi">GIỚI THIỆU</span><span class="cn">关于</span><span class="en">ABOUT</span></h6>
+        <p class="vi">Báo cáo vận hành tháng cho khách hàng LEGEND TEXTILE CO LTD, lập trên dữ liệu chẩn đoán CRM và mốc benchmark ngành. Phục vụ công tác tư vấn của Account Manager.</p>
+        <p class="cn">LEGEND TEXTILE CO LTD 客户月度运营报告，基于 CRM 诊断数据与行业对标基准编制，用于客户经理的咨询工作。</p>
+        <p class="en">Monthly operations report for LEGEND TEXTILE CO LTD, built on CRM diagnosis data and industry benchmarks. Supports Account Manager advisory work.</p>
+      </div>
+      <div>
+        <h6><span class="vi">LIÊN HỆ</span><span class="cn">联系方式</span><span class="en">CONTACT</span></h6>
+        <ul>
+          <li><span class="vi">AM phụ trách: Phạm Thương (thng.l)</span><span class="cn">负责 AM：Phạm Thương（thng.l）</span><span class="en">Account manager: Phạm Thương (thng.l)</span></li>
+          <li><span class="vi">GGS Vietnam — kênh hỗ trợ nội bộ Alibaba.com</span><span class="cn">GGS Vietnam — Alibaba.com 内部支持渠道</span><span class="en">GGS Vietnam — Alibaba.com internal support channel</span></li>
+        </ul>
+      </div>
+      <div>
+        <h6><span class="vi">MIỄN TRỪ TRÁCH NHIỆM</span><span class="cn">免责声明</span><span class="en">DISCLAIMER</span></h6>
+        <p class="vi">Toàn bộ số liệu lấy từ hệ thống CRM nội bộ tại kỳ dữ liệu 04/10/2026 và không được điều chỉnh. Mốc "Top ngành" là ước tính 2× TB ngành theo quy ước, không phải số liệu đo lường. Báo cáo không có mốc benchmark riêng cho Việt Nam. Ngành ghi nhận trên CRM cần được xác minh trước khi dùng để tư vấn.</p>
+        <p class="cn">全部数据取自内部 CRM 系统，数据期为 2026/10/04，未作调整。"行业 Top"为按口径估算的 2× 行业平均，并非测量值。报告不含越南专属基准。用 CRM 记录的行业向客户提供咨询前须先行核实。</p>
+        <p class="en">All figures come from the internal CRM at data period 04/10/2026 and have not been adjusted. "Industry top" is an estimate of 2× the industry average under the stated convention, not a measured figure. The report contains no Vietnam-specific benchmark. The CRM industry must be verified before use in customer conversations.</p>
+      </div>
+    </div>
+    <div class="copy">
+      <span><b>OPS-LEGENDTEXTILE-2026-10</b> · v1.1 · 06/10/2026 · LEGEND TEXTILE CO LTD</span>
+      <span>© 2026 Alibaba.com — GGS Vietnam</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function switchLang(lang) {
+  document.documentElement.className = 'lang-' + lang;
+  var btns = document.querySelectorAll('.lang-switcher button');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].classList.toggle('active', btns[i].dataset.lang === lang);
+  }
+  try { localStorage.setItem('legendTextileOpsLang', lang); } catch (e) {}
+}
+
+(function () {
+  var NAVY = '#1B365D', ORANGE = '#E8740C', GREEN = '#2E8B57', RED = '#C0392B',
+      GOLD = '#D9A400', TEAL = '#1F8A8A', BLUE = '#2D5AA0';
+  Chart.defaults.font.family = "'Be Vietnam Pro','Inter','Noto Sans SC',sans-serif";
+  Chart.defaults.font.size = 11.5;
+  Chart.defaults.color = '#5A6072';
+  function mk(id, cfg) {
+    var el = document.getElementById(id);
+    if (!el || typeof Chart === 'undefined') return;
+    new Chart(el.getContext('2d'), cfg);
+  }
+
+  /* 2.1 stars */
+  mk('c1', {
+    type: 'bar',
+    data: { labels: ['Marketing', 'Service', 'Trade', 'Product', 'Overall'],
+      datasets: [{ label: 'Star score', data: [0, 0, 2, 1, 0],
+        backgroundColor: [RED, RED, GOLD, GOLD, RED], borderRadius: 5 }] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, max: 5, ticks: { stepSize: 1 } } } }
+  });
+
+  /* 2.2 gaps */
+  mk('c2', {
+    type: 'bar',
+    data: { labels: ['Marketing UVs', 'Service replies', 'Orders', 'Orders with GMV', 'Good products'],
+      datasets: [{ label: 'Gap', data: [58, 1, 1, 1, 67], backgroundColor: ORANGE, borderRadius: 5 }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true } } }
+  });
+
+  /* 3.1 buyer countries (store, 30d) */
+  mk('c3', {
+    type: 'doughnut',
+    data: { labels: ['Vietnam 15', 'China 4', 'United States 2', 'UK 1', 'France 1', 'Italy 1', 'Indonesia 1', 'India 1', 'Australia 1', 'Ecuador 1'],
+      datasets: [{ data: [15, 4, 2, 1, 1, 1, 1, 1, 1, 1],
+        backgroundColor: [RED, GOLD, NAVY, BLUE, TEAL, '#6B4E9B', GREEN, '#8FB6E8', '#B0BEC5', '#CFD8DC'],
+        borderWidth: 1, borderColor: '#fff' }] },
+    options: { responsive: true, maintainAspectRatio: false, cutout: '52%', plugins: { legend: { position: 'right' } } }
+  });
+
+  /* 3.2 buyer sources (store, 30d) */
+  mk('c4', {
+    type: 'bar',
+    data: { labels: ['DIRECT', 'SEARCH', 'OTHER', 'SYSTEM_RECOMMENDATION', 'IN_STORE', 'OFF_PLATFORM', 'INQUIRY'],
+      datasets: [{ label: 'Buyer visits', data: [15, 9, 6, 5, 4, 1, 1],
+        backgroundColor: [NAVY, ORANGE, GOLD, BLUE, TEAL, '#B0BEC5', '#CFD8DC'], borderRadius: 4 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true } } }
+  });
+
+  /* 3.3 industry demand by country (30d) */
+  mk('c5', {
+    type: 'bar',
+    data: { labels: ['United States', 'China', 'Philippines', 'Indonesia', 'UK', 'France', 'Spain', 'Brazil', 'Mexico', 'Italy'],
+      datasets: [{ label: 'Category buyers', data: [207289, 95499, 78305, 40851, 37796, 36735, 35723, 33591, 33393, 32113],
+        backgroundColor: NAVY, borderRadius: 4 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true } } }
+  });
+
+  /* 4.1 30d: store vs industry avg vs top10 */
+  mk('c6', {
+    type: 'bar',
+    data: { labels: ['Active buyers', 'Business leads', 'Feedback'],
+      datasets: [
+        { label: 'Store (30d)', data: [1, 1, 0], backgroundColor: RED, borderRadius: 4 },
+        { label: 'Industry average (30d)', data: [170.586, 194.1177, 24.3676], backgroundColor: ORANGE, borderRadius: 4 },
+        { label: 'Industry top-10 (30d)', data: [2520.3, 2833.0, 479.3], backgroundColor: NAVY, borderRadius: 4 }
+      ] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' } },
+      scales: { y: { type: 'logarithmic' } } }
+  });
+
+  /* 6.1 product stock vs benchmark */
+  mk('c7', {
+    type: 'bar',
+    data: { labels: ['Valid products', 'Good products'],
+      datasets: [
+        { label: 'Storefront', data: [233, 0], backgroundColor: RED, borderRadius: 4 },
+        { label: 'Industry average', data: [2442.9, 577.3], backgroundColor: ORANGE, borderRadius: 4 },
+        { label: 'Industry top (2x avg)', data: [4885.8, 1154.6], backgroundColor: NAVY, borderRadius: 4 }
+      ] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' } },
+      scales: { y: { beginAtZero: true } } }
+  });
+
+  /* 7.1 benchmark KPIs 180d: TB vs Top */
+  mk('c8', {
+    type: 'bar',
+    data: { labels: ['shop_pv', 'shop_uv', 'oversea_ab', 'valid_prod', 'prod_release', 'prepay_ord', 'received_amt', 'login_days'],
+      datasets: [
+        { label: 'Industry average (180d)', data: [160780.9, 58627.7, 5716.7, 2442.9, 466.8, 557.0, 904462.54, 174.6], backgroundColor: ORANGE, borderRadius: 4 },
+        { label: 'Industry top = 2x average', data: [321561.8, 117255.4, 11433.4, 4885.8, 933.6, 1114.0, 1808925.07, 349.2], backgroundColor: NAVY, borderRadius: 4 }
+      ] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' } },
+      scales: { y: { type: 'logarithmic' } } }
+  });
+
+  /* restore last language */
+  try {
+    var saved = localStorage.getItem('legendTextileOpsLang');
+    if (saved && ['vi', 'cn', 'en'].indexOf(saved) !== -1) switchLang(saved);
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>
